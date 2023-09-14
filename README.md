@@ -11,10 +11,10 @@ Anggota 2: Daffa Kamal-21/477293/TK/52564<br>
 <br> Tipe Aplikasi: Desktop App menggunakan Windows Forms App
 
 ## Permasalahan yang dipecahkan:
-<br> Minimnya sistem terintegrasi untuk pencatatan hasil panen pertanian di Indonesia (Sensus yang diadakan oleh Badan Pusat Statistik dilakukan sedikitnya empat tahun sekali. Sumber: Badan Pusat Statistik (bps.go.id))
+Minimnya sistem terintegrasi untuk pencatatan hasil panen pertanian di Indonesia (Sensus yang diadakan oleh Badan Pusat Statistik dilakukan sedikitnya empat tahun sekali. Sumber: Badan Pusat Statistik (bps.go.id))
 
 ## Solusi yang diusulkan beserta fitur aplikasi 
-<li> Solusi: Aplikasi   desktop   SiTandur   yang   berfungsi   sebagai   platform pencatatan  hasil  panen  petani  secara  rutin  sehingga  datayang  padudapat terhimpundengan baik.</li>
+Aplikasi   desktop   SiTandur   yang   berfungsi   sebagai   platform pencatatan  hasil  panen  petani  secara  rutin  sehingga  datayang  padudapat terhimpundengan baik.</li>
 
 ## Fitur Aplikasi:
 <li> Menampilkan cuaca dan musim yang diambil menggunakan API dan memberikan rekomendasi sederhana.</li> 
