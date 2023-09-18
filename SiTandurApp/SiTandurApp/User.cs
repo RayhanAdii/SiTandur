@@ -12,6 +12,7 @@ namespace SiTandurApp
         private string _emailUser;
         private string _passwordUser;
         private bool _isAdmin;
+        private bool _isLoggedIn;
 
         public int UserID 
         { 
@@ -36,6 +37,13 @@ namespace SiTandurApp
             set { _isAdmin = value; }
         }
 
+        public bool IsLoggedIn
+        {
+            get { return _isLoggedIn; }
+            set { _isLoggedIn = value; }
+        }
+
+
         public Boolean Login(String emailUser, String passwordUser)
         {
             // Ini nanti diganti menyesuaikan GUI dan Database
@@ -54,9 +62,16 @@ namespace SiTandurApp
             {
                 return false;
             }
-
-
             
+        }
+        public void VerifyLoginStatus(String emailUser, String passwordUser)
+        {
+            IsLoggedIn = Login(emailUser, passwordUser);
+        }
+
+        public void Logout()
+        {
+            IsLoggedIn = false;
         }
     }
 }
