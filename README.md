@@ -24,3 +24,6 @@ Aplikasi   desktop   SiTandur   yang   berfungsi   sebagai   platform pencatatan
 
 ## Class Diagram:
 ![MicrosoftTeams-image](https://github.com/RayhanAdii/SiTandur/assets/93387102/65e27bb3-c4a9-4912-b7a3-3ffe87b8d0e1)
+
+## ERD:
+![ERD_Sitandur](https://github.com/RayhanAdii/SiTandur/assets/88720363/009a7880-98e8-47ec-adfe-881ff5ccff7d)
