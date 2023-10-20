@@ -6,5 +6,24 @@ namespace SiTandurApp
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbEmailLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbPasswordLogin_TextChanged(object sender, EventArgs e)
+        {
+        }
     }
 }
