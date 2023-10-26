@@ -7,17 +7,36 @@
         mc:Ignorable="d"
         Title="Nyoba" Height="450" Width="800">
     <Grid>
-        <Border BorderBrush="#ACB0AF" BorderThickness="1" Margin="70 7" CornerRadius="5">
+        <Border BorderBrush="#ACB0AF" BorderThickness="1" Margin="315,79,400,337" CornerRadius="8
+                ">
             <Grid Margin="7 9">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-
-
                 <TextBox x:Name="txtName" Style="{StaticResource textBox}" />
             </Grid>
         </Border>
+        <Button Content="Click Me" Width="100" Height="40" Margin="520,279,180,115">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#007ACC" BorderBrush="#005687" BorderThickness="1" CornerRadius="5">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Simpan" Width="73" Height="24" Foreground="White">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#FF52A155" BorderBrush="#FF52A155" BorderThickness="1" CornerRadius="8">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
+    
+    
 </Window>
