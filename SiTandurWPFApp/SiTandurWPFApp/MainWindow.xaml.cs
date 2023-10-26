@@ -36,5 +36,11 @@ namespace SiTandurWPFApp
             AdminMengeditPetaniWindow adminEditPetaniWindow = new AdminMengeditPetaniWindow();
             adminEditPetaniWindow.Show();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            TableComponent tableComponent = new TableComponent();
+            tableComponent.Show();
+        }
     }
 }
