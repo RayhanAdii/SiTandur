@@ -61,7 +61,7 @@ namespace SiTandurWPFApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SiTandurWPFApp;component/nyoba.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SiTandurWPFApp;V1.0.0.0;component/nyoba.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Nyoba.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
