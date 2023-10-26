@@ -9,7 +9,7 @@
         ResizeMode="NoResize"
         Title="WelcomePage" Height="600" Width="800">
     <Grid>
-        <Border Background="White" CornerRadius="24" Margin="186,160,186,160">
+        <Border Background="White" CornerRadius="24" Margin="186,150,186,150">
             <Grid>
                 <TextBlock Text="Selamat Datang di SiTandur" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black" Grid.Row="0" Margin="0,35,0,0"/>
                 <TextBlock Text="Sistem Informasi Manajemen Hasil Panen" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black" Margin="0,67,0,0"/>

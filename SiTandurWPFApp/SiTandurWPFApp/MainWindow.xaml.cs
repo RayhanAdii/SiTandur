@@ -27,10 +27,7 @@ namespace SiTandurWPFApp
 
         private void WelcomeBtn_Click(object sender, RoutedEventArgs e)
         {
-            // Membuat instance dari WelcomePage
             WelcomePage welcomePage = new WelcomePage();
-
-            // Mengatur konten Frame menjadi WelcomePage
             welcomePage.Show();
         }
         private void AdminDasborBtn_Click(object sender, RoutedEventArgs e)
