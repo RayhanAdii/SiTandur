@@ -1,5 +1,5 @@
 ﻿SiTandurWPFApp
-1.0.0.0
+
 
 winexe
 C#
@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\App.xaml
-3-892972747
+31815549313
 
-7-1971024846
+5-1758654656
 194183970531
-AdminMenambahPetaniWindow.xaml;MainWindow.xaml;Nyoba.xaml;
+AdminMenambahPetaniPage.xaml;AdminMenambahPetaniWindow.xaml;MainWindow.xaml;
 
-True
+False
 
