@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="AdminMenambahPetaniWindow" Height="418" Width="479">
     <Grid Width="479" Height="418">
-        <TextBlock HorizontalAlignment="Left" Margin="62,32,0,0" TextWrapping="Wrap" Text="Tambah Data" VerticalAlignment="Top" FontSize="16"/>
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,103,62,276" CornerRadius="8
+        <TextBlock HorizontalAlignment="Left" Margin="62,14,0,0" TextWrapping="Wrap" Text="Tambah Data" VerticalAlignment="Top" FontSize="16"/>
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,79,62,300" CornerRadius="8
                 " Width="355" Background="#FFECECEC">
             <Grid Margin="7 9">
                 <Grid.ColumnDefinitions>
@@ -18,11 +18,11 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBox x:Name="AdminAddNamaPetani" Style="{StaticResource textBox}" Grid.ColumnSpan="3" Margin="10,0,0,0" Background="#FFECECEC" />
-               
+
             </Grid>
         </Border>
-        <TextBlock HorizontalAlignment="Left" Margin="62,80,0,0" TextWrapping="Wrap" Text="Nama Petani" VerticalAlignment="Top" FontSize="13" />
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,170,62,209" CornerRadius="8
+        <TextBlock HorizontalAlignment="Left" Margin="62,56,0,0" TextWrapping="Wrap" Text="Nama Petani" VerticalAlignment="Top" FontSize="13" />
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,146,62,233" CornerRadius="8
                 " Width="355" Background="#FFECECEC">
             <Grid Margin="7 9">
                 <Grid.ColumnDefinitions>
@@ -35,8 +35,8 @@
 
             </Grid>
         </Border>
-        <TextBlock HorizontalAlignment="Left" Margin="62,147,0,0" TextWrapping="Wrap" Text="Kelompok Petani" VerticalAlignment="Top" FontSize="13" />
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,237,62,142" CornerRadius="8
+        <TextBlock HorizontalAlignment="Left" Margin="62,123,0,0" TextWrapping="Wrap" Text="Kelompok Petani" VerticalAlignment="Top" FontSize="13" />
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,213,62,166" CornerRadius="8
                 " Width="355" Background="#FFECECEC">
             <Grid Margin="7 9">
                 <Grid.ColumnDefinitions>
@@ -49,8 +49,8 @@
 
             </Grid>
         </Border>
-        <TextBlock HorizontalAlignment="Left" Margin="62,214,0,0" TextWrapping="Wrap" Text="Alamat Lengkap Petani" VerticalAlignment="Top" FontSize="13" />
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,304,62,75" CornerRadius="8
+        <TextBlock HorizontalAlignment="Left" Margin="62,190,0,0" TextWrapping="Wrap" Text="Alamat Lengkap Petani" VerticalAlignment="Top" FontSize="13" />
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,280,62,99" CornerRadius="8
                 " Width="355" Background="#FFECECEC">
             <Grid Margin="7 9">
                 <Grid.ColumnDefinitions>
@@ -63,8 +63,9 @@
 
             </Grid>
         </Border>
-        <TextBlock HorizontalAlignment="Left" Margin="62,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13" ><Run Text="Usia Petani"/><LineBreak/><Run/></TextBlock>
-        <Button x:Name="BtnAdminSimpanTambahPetani" Content="Simpan" Width="73" Height="24" Foreground="White" Margin="162,362,240,32" Background="#FF52A155" BorderBrush="#FF52A155">
+        <TextBlock HorizontalAlignment="Left" Margin="62,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13" ><Run Text="Usia Petani"/><LineBreak/><Run/></TextBlock>
+        
+        <Button x:Name="BtnAdminSimpanTambahPetani" Content="Simpan" Width="73" Height="24" Foreground="White" Margin="164,338,242,56" Background="#FF52A155" BorderBrush="#FF52A155" Click="BtnAdminSimpanTambahPetani_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="#FF52A155" BorderBrush="#FF52A155" BorderThickness="0" CornerRadius="8">
@@ -73,7 +74,8 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="BtnAdminBatalTambahPetani" Content="Batal" Width="73" Height="24" Foreground="White" Margin="244,362,164,32" Background="#FFBE5858" BorderBrush="#FF52A155" Click="BtnAdminBatalTambahPetani_Click">
+        
+        <Button x:Name="BtnAdminBatalTambahPetani" Content="Batal" Width="73" Height="24" Foreground="White" Margin="244,338,162,56" Background="#FFBE5858" BorderBrush="#FF52A155" Click="BtnAdminBatalTambahPetani_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="#FFBE5858" BorderBrush="#FFBE5858" BorderThickness="0" CornerRadius="8">

@@ -3,12 +3,10 @@ D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\SiTandurWPFApp.runtimeconfig.json
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\SiTandurWPFApp.dll
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\SiTandurWPFApp.pdb
-D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMenambahPetaniPage.g.cs
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\MainWindow.g.cs
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\App.g.cs
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\SiTandurWPFApp_MarkupCompile.cache
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\SiTandurWPFApp_MarkupCompile.lref
-D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMenambahPetaniPage.baml
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\MainWindow.baml
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\SiTandurWPFApp.g.resources
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\SiTandurWPFApp.GeneratedMSBuildEditorConfig.editorconfig
@@ -22,3 +20,6 @@ D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\ref\SiTandurWPFApp.dll
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMenambahPetaniWindow.g.cs
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMenambahPetaniWindow.baml
+D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\Nyoba.g.cs
+D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\App.baml
+D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\Nyoba.baml

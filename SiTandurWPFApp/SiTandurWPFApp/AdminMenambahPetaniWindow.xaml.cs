@@ -26,7 +26,12 @@ namespace SiTandurWPFApp
 
         private void BtnAdminBatalTambahPetani_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
+        }
 
+        private void BtnAdminSimpanTambahPetani_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();  
         }
     }
 }
