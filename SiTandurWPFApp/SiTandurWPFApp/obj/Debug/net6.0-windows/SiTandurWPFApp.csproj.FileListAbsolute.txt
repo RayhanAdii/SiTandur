@@ -4,11 +4,13 @@ D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\SiTandurWPFApp.dll
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\SiTandurWPFApp.pdb
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\SiTandurWPFApp.csproj.AssemblyReference.cache
+D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminDasbor.g.cs
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\MainWindow.g.cs
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\WelcomePage.g.cs
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\App.g.cs
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\SiTandurWPFApp_MarkupCompile.cache
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\SiTandurWPFApp_MarkupCompile.lref
+D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminDasbor.baml
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\MainWindow.baml
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\WelcomePage.baml
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\SiTandurWPFApp.g.resources

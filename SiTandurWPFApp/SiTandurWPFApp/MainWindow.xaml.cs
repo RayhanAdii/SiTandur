@@ -32,7 +32,8 @@ namespace SiTandurWPFApp
         }
         private void AdminDasborBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            AdminDasbor adminDasbor = new AdminDasbor();
+            adminDasbor.Show();
         }
     }
 }

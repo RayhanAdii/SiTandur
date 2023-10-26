@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\App.xaml
-2910927367
+31134870199
 
-6612047632
+7-1481962806
 194-200944676
-MainWindow.xaml;WelcomePage.xaml;
+AdminDasbor.xaml;MainWindow.xaml;WelcomePage.xaml;
 
-False
+True
 
