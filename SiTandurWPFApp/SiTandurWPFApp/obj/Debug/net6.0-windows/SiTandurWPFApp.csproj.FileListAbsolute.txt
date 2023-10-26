@@ -23,3 +23,5 @@ D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\SiTandurWPFApp.pdb
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\SiTandurWPFApp.genruntimeconfig.cache
 D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\ref\SiTandurWPFApp.dll
+D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminHapusData.g.cs
+D:\DAFFA\Junpro\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminHapusData.baml

@@ -10,12 +10,18 @@
     <Compile Update="AdminDasbor.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AdminHapusData.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WelcomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AdminDasbor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminHapusData.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

@@ -35,5 +35,11 @@ namespace SiTandurWPFApp
             AdminDasbor adminDasbor = new AdminDasbor();
             adminDasbor.Show();
         }
+
+        private void AdminHapusDataBtn_Click(object sender, RoutedEventArgs e)
+        {
+            AdminHapusData adminHapusData = new AdminHapusData();
+            adminHapusData.Show();
+        }
     }
 }
