@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\
 SiTandurWPFApp
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\App.xaml
-11407045341
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\App.xaml
+3-625388289
 
-5514369551
-194183970531
-MainWindow.xaml;
+7-548211711
+227-429430954
+AdminLoginPage.xaml;MainWindow.xaml;PetaniLoginPage.xaml;
 
-False
+True
 

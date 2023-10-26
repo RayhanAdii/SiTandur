@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Kuliah\\5th_semester\\IT Junior Project\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\SiTandurWPFApp.csproj": {}
+    "D:\\Programs\\AAA Junior Project\\hasilpanen\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\SiTandurWPFApp.csproj": {}
   },
   "projects": {
-    "D:\\Kuliah\\5th_semester\\IT Junior Project\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\SiTandurWPFApp.csproj": {
+    "D:\\Programs\\AAA Junior Project\\hasilpanen\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\SiTandurWPFApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Kuliah\\5th_semester\\IT Junior Project\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\SiTandurWPFApp.csproj",
+        "projectUniqueName": "D:\\Programs\\AAA Junior Project\\hasilpanen\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\SiTandurWPFApp.csproj",
         "projectName": "SiTandurWPFApp",
-        "projectPath": "D:\\Kuliah\\5th_semester\\IT Junior Project\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\SiTandurWPFApp.csproj",
+        "projectPath": "D:\\Programs\\AAA Junior Project\\hasilpanen\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\SiTandurWPFApp.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "D:\\Kuliah\\5th_semester\\IT Junior Project\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\obj\\",
+        "outputPath": "D:\\Programs\\AAA Junior Project\\hasilpanen\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,8 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://pkgs.dev.azure.com/lailymedha2802/13c50b6f-8654-4fbd-a947-17da9e30b64b/_packaging/DemoFeed/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -44,6 +39,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "MahApps.Metro.IconPacks": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
