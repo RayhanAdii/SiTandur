@@ -10,12 +10,18 @@
     <Compile Update="AdminMenambahPetaniWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AdminMengeditPetaniWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Nyoba.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AdminMenambahPetaniWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminMengeditPetaniWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

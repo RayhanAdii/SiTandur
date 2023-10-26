@@ -23,3 +23,5 @@ D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\Nyoba.g.cs
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\App.baml
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\Nyoba.baml
+D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMengeditPetaniWindow.g.cs
+D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMengeditPetaniWindow.baml

@@ -27,8 +27,14 @@ namespace SiTandurWPFApp
 
         private void AddPetanibyAdmin_Click(object sender, RoutedEventArgs e)
         {
-            AdminMenambahPetaniWindow adminWindow = new AdminMenambahPetaniWindow();
-            adminWindow.Show();
+            AdminMenambahPetaniWindow adminAddPetaniWindow = new AdminMenambahPetaniWindow();
+            adminAddPetaniWindow.Show();
+        }
+
+        private void EditPetanibyAdmin_Click(object sender, RoutedEventArgs e)
+        {
+            AdminMengeditPetaniWindow adminEditPetaniWindow = new AdminMengeditPetaniWindow();
+            adminEditPetaniWindow.Show();
         }
     }
 }
