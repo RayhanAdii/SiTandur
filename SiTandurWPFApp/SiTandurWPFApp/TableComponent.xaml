@@ -120,7 +120,7 @@
     <Grid>
         
         <!--Datagrid-->
-        <DataGrid AutoGenerateColumns="False" Style="{DynamicResource DataGridStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeader1}"  RowStyle="{DynamicResource DataGridRowStyle1}" Grid.Row="5" x:Name="petaniDataGrid" SelectionChanged="petaniDataGrid_SelectionChanged" GridLinesVisibility="None">
+        <DataGrid AutoGenerateColumns="False"  CanUserAddRows = "False" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeader1}"  RowStyle="{DynamicResource DataGridRowStyle1}" Grid.Row="5" x:Name="petaniDataGrid" GridLinesVisibility="None">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="No" Binding ="{Binding IDPetani}" IsReadOnly="True" CanUserResize="False" Width="40"/>
                 <DataGridTextColumn Header="Nama Petani" Binding ="{Binding NamaPetani}" IsReadOnly="True" Width="144"/>
@@ -128,11 +128,11 @@
                 <DataGridTextColumn Header="Alamat Kelompok Tani" Binding ="{Binding AlamatPetani}" IsReadOnly="True"  Width="152"/>
                 <DataGridTextColumn Header="Usia Petani" Binding ="{Binding UsiaPetani}" IsReadOnly="True"  Width="79"/>
 
-                <DataGridTemplateColumn Header="Aksi" IsReadOnly="True" Width="*">
+                <DataGridTemplateColumn Header="Aksi"  Width="*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <Button x:Name="BtnTabelUbahPetani" Content="Ubah" Width="73" Height="24" Foreground="White"  Background="#FF52A155" BorderBrush="#FF52A155">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <Button x:Name="BtnTabelUbahPetani" Content="Ubah" Width="55" Height="23" Margin="0 0 10 0" Foreground="White"  Background="#FF52A155" BorderBrush="#FF52A155" Click="BtnTableUbahPetani_Click">
                                     <Button.Template>
                                         <ControlTemplate TargetType="Button">
                                             <Border Background="#FF52A155" BorderBrush="#FF52A155" BorderThickness="0" CornerRadius="8">
@@ -142,7 +142,7 @@
                                     </Button.Template>
                                 </Button>
 
-                                <Button x:Name="BtnTabelHapusPetani" Content="Hapus" Width="73" Height="24" Foreground="White" Background="#FFBE5858" BorderBrush="#FF52A155">
+                                <Button x:Name="BtnTabelHapusPetani" Content="Hapus" Width="55" Height="23" Foreground="White" Background="#FFBE5858" BorderBrush="#FF52A155">
                                     <Button.Template>
                                         <ControlTemplate TargetType="Button">
                                             <Border Background="#FFBE5858" BorderBrush="#FFBE5858" BorderThickness="0" CornerRadius="8">

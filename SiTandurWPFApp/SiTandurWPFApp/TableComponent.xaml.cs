@@ -32,13 +32,15 @@ namespace SiTandurWPFApp
             petani.Add(new Petani { IDPetani = 3, NamaPetani = "Bob Johnson", KelompokTani = "Farmers Group A", AlamatPetani = "789 Oak St", UsiaPetani = "42" });
             petani.Add(new Petani { IDPetani = 4, NamaPetani = "Alice Brown", KelompokTani = "Farmers Group C", AlamatPetani = "101 Pine St", UsiaPetani = "55" });
             petani.Add(new Petani { IDPetani = 5, NamaPetani = "Charlie Lee", KelompokTani = "Farmers Group B", AlamatPetani = "202 Cedar St", UsiaPetani = "30" });
+            petani.Add(new Petani { IDPetani = 6, NamaPetani = "Handoko", KelompokTani = "Umbul Makmur", AlamatPetani = "Umbul Makmur No 12", UsiaPetani = "32" });
 
             petaniDataGrid.ItemsSource = petani;
         }
 
-        private void petaniDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void BtnTableUbahPetani_Click(object sender, RoutedEventArgs e)
         {
-
+            AdminMengeditPetaniWindow adminEditPetaniWindow = new AdminMengeditPetaniWindow();
+            adminEditPetaniWindow.Show();
         }
     }
 }
