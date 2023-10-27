@@ -5,14 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SiTandurWPFApp"
         mc:Ignorable="d"
-        Title="Petani Login Page" Height="900" Width="1200" Background="#52A155">
+        ResizeMode="NoResize"
+        Title="Petani Login Page" Height="600" Width="800" Background="#52A155">
     <Grid>
         <!---Input Form-->
         <Border Width="565" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#fff"
             BorderThickness="2" CornerRadius="10" Padding="30" Background="White">
             <StackPanel>
 
-                <Image x:Name="logo_sitandur" Source="/Images/logo-std.png" Height="88" Width="196"/>
+                <Image Source="D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\Images\logo-std.png"  Height="88" Width="196"/>
 
                 <TextBlock Foreground="Black" FontWeight="Bold" FontSize="20" Margin="0 0 0 0" Text="Masuk Sebagai" HorizontalAlignment="Center"/>
                 <StackPanel Orientation="Horizontal" Width="352">

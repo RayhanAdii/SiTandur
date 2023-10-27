@@ -1,0 +1,113 @@
+﻿<Window x:Class="SiTandurWPFApp.PetaniDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SiTandurWPFApp" xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="PetaniDashboard" Height="600" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="235" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+        <Border>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#52A155" Offset="0" />
+                    <GradientStop Color="#52A155" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Label Foreground="#fff" Content="UD MAKMUR" FontSize="15" HorizontalAlignment="Left" Margin="86,25,0,0" VerticalAlignment="Top"/>
+        <Button Content="Info Profil" HorizontalAlignment="Left" Margin="92,59,0,0" VerticalAlignment="Top" Width="66"/>
+
+        <StackPanel>
+
+            <RadioButton Content="    Dasbor"
+                         Height="50"
+                         Foreground="White"
+                         FontSize="16"
+                         Margin="0,150,0,0"
+                         Style="{StaticResource MenuSelectedButton}"/>
+            <RadioButton Content="    Data Hasil Panen"
+                         Height="50"
+                         Foreground="White"
+                         FontSize="16"
+                         Style="{StaticResource MenuButton}" Checked="DataHasilPanen_Checked" />
+        </StackPanel>
+
+        <Image Source="D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\Images\novice.png" HorizontalAlignment="Left" Height="48" Margin="30,34,0,0" VerticalAlignment="Top" Width="48"/>
+
+
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="38,69,311,376" CornerRadius="8
+            " Background="#FFECECEC" Grid.Column="1">
+            <Border.Effect>
+                <DropShadowEffect Color="#bdbdbd" Opacity="0.5" BlurRadius="5" ShadowDepth="3"/>
+            </Border.Effect>
+            <Grid Margin="7 9">
+                <lvc:CartesianChart>
+                </lvc:CartesianChart>
+
+            </Grid>
+        </Border>
+
+
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="283,69,184,376" CornerRadius="8
+            " Background="#FFECECEC" Grid.Column="1">
+            <Border.Effect>
+                <DropShadowEffect Color="#bdbdbd" Opacity="0.5" BlurRadius="5" ShadowDepth="3"/>
+            </Border.Effect>
+            <Grid Margin="7 9">
+                <TextBox x:Name="TitleBeratPanen" Text="Total Berat Panen" FontSize="9" HorizontalAlignment="Center" Style="{StaticResource textBox}" Margin="0,0,0,83" Background="#FFECECEC" Foreground="#52A155"/>
+                <TextBox x:Name="TotalPanen" Text="750" FontSize="35" HorizontalAlignment="Center" Style="{StaticResource textBox}" Margin="0,25,0,0" Background="#FFECECEC" Foreground="#52A155" FontWeight="Bold" />
+                <TextBox x:Name="Units" Text="kilogram" FontSize="15" HorizontalAlignment="Center" Style="{StaticResource textBox}" Margin="0,67,0,0" Background="#FFECECEC" Foreground="#52A155"/>
+            </Grid>
+        </Border>
+
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="401,69,66,376" CornerRadius="8
+            " Background="#FFECECEC" Grid.Column="1">
+            <Border.Effect>
+                <DropShadowEffect Color="#bdbdbd" Opacity="0.5" BlurRadius="5" ShadowDepth="3"/>
+            </Border.Effect>
+            <Grid Margin="7 9">
+                <TextBox x:Name="C" Style="{StaticResource textBox}" Margin="5,0,5,0" Background="#FFECECEC" />
+                <TextBox x:Name="TitlePendapatan" Text="Pendapatan Kotor" FontSize="9" HorizontalAlignment="Center" Style="{StaticResource textBox}" Margin="0,0,0,83" Background="#FFECECEC" Foreground="#4884DF"/>
+                <TextBox x:Name="Pendapatan" Text="150" FontSize="35" HorizontalAlignment="Center" Style="{StaticResource textBox}" Margin="0,25,0,0" Background="#FFECECEC" Foreground="#4884DF" FontWeight="Bold" />
+                <TextBox x:Name="Besaran" Text="juta" FontSize="15" HorizontalAlignment="Center" Style="{StaticResource textBox}" Margin="0,67,0,0" Background="#FFECECEC" Foreground="#4884DF"/>
+            </Grid>
+        </Border>
+
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="283,252,66,193" CornerRadius="8
+            " Background="#FFECECEC" Grid.Column="1">
+            <Border.Effect>
+                <DropShadowEffect Color="#bdbdbd" Opacity="0.5" BlurRadius="5" ShadowDepth="3"/>
+            </Border.Effect>
+            <Grid Margin="7 9">
+                <lvc:CartesianChart Series="{Binding SeriesCollection}">
+                </lvc:CartesianChart>
+
+            </Grid>
+        </Border>
+
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="38,252,311,193" CornerRadius="8
+            " Background="#FFECECEC" Grid.Column="1">
+            <Border.Effect>
+                <DropShadowEffect Color="#bdbdbd" Opacity="0.5" BlurRadius="5" ShadowDepth="3"/>
+            </Border.Effect>
+            <Grid Margin="7 9">
+                <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="Left">
+                </lvc:CartesianChart>
+            </Grid>
+        </Border>
+
+
+
+
+
+    </Grid>
+</Window>

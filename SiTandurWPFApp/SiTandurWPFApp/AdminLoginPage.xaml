@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SiTandurWPFApp"
         mc:Ignorable="d"
-        Title="AdminLoginPage" Height="900" Width="1200" Background="#52A155">
+        ResizeMode="NoResize"
+        Title="AdminLoginPage" Height="600" Width="800" Background="#52A155">
 
 
     <Grid>

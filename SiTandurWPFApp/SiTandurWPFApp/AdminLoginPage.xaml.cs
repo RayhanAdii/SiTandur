@@ -42,7 +42,9 @@ namespace SiTandurWPFApp
         {
             if (!string.IsNullOrEmpty(txtName.Text) && !string.IsNullOrEmpty(passwordBox.Password))
             {
-                MessageBox.Show("Successfully Signed In");
+                PetaniDashboard petanidashboard = new PetaniDashboard();
+                this.Close();
+                petanidashboard.Show();
             }
         }
 

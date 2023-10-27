@@ -58,3 +58,11 @@ D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp
 D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminLoginPage.g.cs
 D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminLoginPage.baml
 D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\PetaniLoginPage.baml
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\PetaniDashboard.g.cs
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\PetaniDashboard.baml
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AddHasilPanen.g.cs
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AddHasilPanen.baml
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\LiveCharts.dll
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\DataHasilPanenPage.g.cs
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\DataHasilPanenPage.baml
