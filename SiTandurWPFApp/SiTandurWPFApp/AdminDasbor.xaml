@@ -43,5 +43,45 @@
                 <Button Content="+ Tambah" FontSize="12" Background="Transparent" Foreground="#52A155" Padding="14,6,14,7" BorderThickness="0"/>
             </Border>
         </Grid>
+
+        <!--Datagrid-->
+        <DataGrid Height="180" AutoGenerateColumns="False"  CanUserAddRows = "False" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeader1}"  RowStyle="{DynamicResource DataGridRowStyle1}" x:Name="petaniDataGrid" GridLinesVisibility="None" Margin="28,362,23,42" SelectionChanged="petaniDataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="No" Binding ="{Binding IDPetani}" IsReadOnly="True" CanUserResize="False" Width="40"/>
+                <DataGridTextColumn Header="Nama Petani" Binding ="{Binding NamaPetani}" IsReadOnly="True" Width="144"/>
+                <DataGridTextColumn Header="Kelompok Tani" Binding ="{Binding KelompokTani}" IsReadOnly="True" Width="142"/>
+                <DataGridTextColumn Header="Alamat Kelompok Tani" Binding ="{Binding AlamatPetani}" IsReadOnly="True"  Width="152"/>
+                <DataGridTextColumn Header="Usia Petani" Binding ="{Binding UsiaPetani}" IsReadOnly="True"  Width="79"/>
+
+                <DataGridTemplateColumn Header="Aksi"  Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <Button x:Name="BtnTabelUbahPetani" Content="Ubah" Width="55" Height="23" Margin="0 0 10 0" Foreground="White"  Background="#FF52A155" BorderBrush="#FF52A155" Click="BtnTableUbahPetani_Click">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="#FF52A155" BorderBrush="#FF52A155" BorderThickness="0" CornerRadius="8">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+
+                                <Button x:Name="BtnTabelHapusPetani" Content="Hapus" Width="55" Height="23" Foreground="White" Background="#FFBE5858" BorderBrush="#FF52A155">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="#FFBE5858" BorderBrush="#FFBE5858" BorderThickness="0" CornerRadius="8">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
     </Grid>
 </Window>
