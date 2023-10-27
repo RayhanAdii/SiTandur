@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dC+RXqQNyxsv2OrgIfEzWUxvVqBcXKBlnLDvYbU971u19/wdQ9Zsq7CJ/lIsAK+VwAy8JK8fWQmWnG1FqzJo/Q==",
+  "dgSpecHash": "xugO74e9JzhVPEZCUnE3riS6brxwSRrHnYz02dBBTiRBc1OwyIWO4UG0yVtVGC/SaH8O/stWkG71M73ulu3IDA==",
   "success": true,
   "projectFilePath": "D:\\Kuliah\\5th_semester\\IT Junior Project\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\SiTandurWPFApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\mahapps.metro.iconpacks\\4.11.0\\mahapps.metro.iconpacks.4.11.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\App.xaml
-11407045341
+61309440869
 
-5514369551
-194183970531
-MainWindow.xaml;
+10-949370436
+227-429430954
+AdminMenambahPetaniWindow.xaml;AdminMengeditPetaniWindow.xaml;MainWindow.xaml;Nyoba.xaml;TableComponent.xaml;TableComponentHasilPanen.xaml;
 
-False
+True
 

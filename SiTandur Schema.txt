@@ -1,0 +1,40 @@
+SiTandur Schema
+
+CREATE TABLE Users(
+	UserID serial not null PRIMARY KEY,
+	emailUser varchar(255) not null,
+	passwordUser varchar(255) not null,
+	isAdmin boolean not null
+);
+
+CREATE TABLE Administrator(
+	AdministratorID serial not null PRIMARY KEY,
+	UserID integer not null REFERENCES users(UserID),
+	namaAdministrator varchar(255) not null,
+	alamatAdministrator varchar(255) not null
+);
+
+CREATE TABLE Petani(
+	PetaniID serial not null PRIMARY KEY,
+	UserID integer not null REFERENCES users(UserID),
+	namaPetani varchar(255) not null,
+	alamatPetani varchar(255) not null,
+	kelompokTani varchar(255),
+	usiaPetani integer not null
+);
+
+CREATE TABLE Tanaman(
+	tanamanID serial not null PRIMARY KEY,
+	namaTanaman varchar(255) not null
+);
+
+CREATE TABLE HasilPanen(
+	HasilPanenID serial not null PRIMARY KEY,
+	TanamanID integer not null REFERENCES Tanaman(tanamanID),
+	PetaniID integer not null REFERENCES Petani(petaniID),
+	beratHasilPanen real not null,
+	tanggalPanen timestamp not null DEFAULT current_timestamp,
+	lokasiPanen varchar(255) not null,
+	hargaPasar integer not null,
+	hargaJual bigint not null
+);

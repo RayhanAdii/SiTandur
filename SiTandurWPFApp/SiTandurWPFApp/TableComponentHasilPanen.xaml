@@ -1,0 +1,52 @@
+﻿<Window x:Class="SiTandurWPFApp.TableComponentHasilPanen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SiTandurWPFApp"
+        mc:Ignorable="d"
+        Title="TableComponentHasilPanen" Height="260" Width="877 ">
+    <Grid>
+        <!--Datagrid-->
+        <DataGrid AutoGenerateColumns="False"  CanUserAddRows = "False" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeader1}"  RowStyle="{DynamicResource DataGridRowStyle1}" Grid.Row="5" x:Name="hasilPanenDataGrid" GridLinesVisibility="None">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="No" Binding ="{Binding NoPanen}" IsReadOnly="True" CanUserResize="False" Width="40"/>
+                <DataGridTextColumn Header="Tanggal" Binding ="{Binding TanggalPanen}" IsReadOnly="True" Width="102"/>
+                <DataGridTextColumn Header="ID Panen" Binding ="{Binding IDPanen}" IsReadOnly="True" Width="70"/>
+                <DataGridTextColumn Header="Komoditas" Binding ="{Binding NamaTanaman}" IsReadOnly="True" Width="92"/>
+                <DataGridTextColumn Header="Lokasi Panen" Binding ="{Binding LokasiPanen}" IsReadOnly="True" Width="109"/>
+                <DataGridTextColumn Header="Petani" Binding ="{Binding NamaPetani}" IsReadOnly="True" Width="79"/>
+                <DataGridTextColumn Header="Berat (kilo)" Binding ="{Binding BeratHasilPanen}" IsReadOnly="True"  Width="79"/>
+                <DataGridTextColumn Header="Catatan" Binding ="{Binding CatatanHasilPanen}" IsReadOnly="True"  Width="113"/>
+
+                <DataGridTemplateColumn Header="Aksi"  Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <Button x:Name="BtnTabelUbahHasilPanen" Content="Ubah" Width="55" Height="23" Margin="0 0 10 0" Foreground="White"  Background="#FF52A155" BorderBrush="#FF52A155" Click="BtnTabelUbahHasilPanen_Click">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="#FF52A155" BorderBrush="#FF52A155" BorderThickness="0" CornerRadius="8">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+
+                                <Button x:Name="BtnTabelHapusHasilPanen" Content="Hapus" Width="55" Height="23" Foreground="White" Background="#FFBE5858" BorderBrush="#FF52A155">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="#FFBE5858" BorderBrush="#FFBE5858" BorderThickness="0" CornerRadius="8">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

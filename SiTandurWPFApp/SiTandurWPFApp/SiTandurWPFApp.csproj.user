@@ -7,7 +7,39 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AdminMenambahPetaniWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminMengeditPetaniWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Nyoba.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TableComponent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TableComponentHasilPanen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AdminMenambahPetaniWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminMengeditPetaniWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Nyoba.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TableComponent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TableComponentHasilPanen.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
