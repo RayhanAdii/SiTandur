@@ -42,5 +42,11 @@ namespace SiTandurWPFApp
             TableComponent tableComponent = new TableComponent();
             tableComponent.Show();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            TableComponentHasilPanen tableComponentHP = new TableComponentHasilPanen();
+            tableComponentHP.Show();
+        }
     }
 }

@@ -11,6 +11,7 @@
         <Button x:Name="AddPetanibyAdmin" Content="+ Tambah" HorizontalAlignment="Left" Margin="240,178,0,0" Grid.Row="1" VerticalAlignment="Top" Background="{x:Null}" Click="AddPetanibyAdmin_Click"/>
         <Button x:Name="EditPetanibyAdmin" Content="Edit" HorizontalAlignment="Left" Height="20" Margin="240,220,0,0" Grid.Row="1" VerticalAlignment="Top" Width="68" Click="EditPetanibyAdmin_Click"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="180,291,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="TableHasilPanen" HorizontalAlignment="Left" Margin="324,279,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Button_Click_1"/>
         <Grid.RowDefinitions>
             <RowDefinition Height="31*"/>
             <RowDefinition Height="387*"/>
