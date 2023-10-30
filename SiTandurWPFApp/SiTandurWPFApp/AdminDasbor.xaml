@@ -40,7 +40,7 @@
         <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,0">
             <TextBlock Text="Manajemen Data Petani" FontSize="18" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,281,0,0"/>
             <Border Background="Transparent" CornerRadius="8" BorderBrush="#52A155" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,320,0,0">
-                <Button Content="+ Tambah" FontSize="12" Background="Transparent" Foreground="#52A155" Padding="14,6,14,7" BorderThickness="0"/>
+                <Button x:Name="btnAdminMenambahPetani" Content="+ Tambah" FontSize="12" Background="Transparent" Foreground="#52A155" Padding="14,6,14,7" BorderThickness="0" Click="BtnAdminMenambahPetani_Click"/>
             </Border>
         </Grid>
 
@@ -67,7 +67,7 @@
                                     </Button.Template>
                                 </Button>
 
-                                <Button x:Name="BtnTabelHapusPetani" Content="Hapus" Width="55" Height="23" Foreground="White" Background="#FFBE5858" BorderBrush="#FF52A155">
+                                <Button x:Name="BtnTabelHapusPetani" Content="Hapus" Width="55" Height="23" Foreground="White" Background="#FFBE5858" BorderBrush="#FF52A155" Click="BtnTabelHapusPetani_Click">
                                     <Button.Template>
                                         <ControlTemplate TargetType="Button">
                                             <Border Background="#FFBE5858" BorderBrush="#FFBE5858" BorderThickness="0" CornerRadius="8">

@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="Images\logo-std.png" />
+    <None Remove="Images\LogoSiTandur.png" />
     <None Remove="Images\novice.png" />
   </ItemGroup>
 
@@ -19,6 +20,9 @@
 
   <ItemGroup>
     <Content Include="Images\logo-std.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\LogoSiTandur.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\novice.png">

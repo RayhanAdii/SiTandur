@@ -13,9 +13,9 @@
             <Grid>
                 <TextBlock Text="Selamat Datang di SiTandur" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black" Grid.Row="0" Margin="0,35,0,0"/>
                 <TextBlock Text="Sistem Informasi Manajemen Hasil Panen" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black" Margin="0,67,0,0"/>
-                <Image Source="/Image/LogoSiTandur.png" Width="180" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,124,0,0"/>
+                <Image Source="/Images/LogoSiTandur.png" Width="180" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,124,0,0"/>
                 <Border Background="#52A155" CornerRadius="8" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,35">
-                    <Button Padding="32,8,32,8" Content="Masuk" Background="Transparent" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0"/>
+                    <Button x:Name="btnWelcomePageMasuk" Padding="32,8,32,8" Content="Masuk" Background="Transparent" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="0" Click="BtnWelcomePageMasuk_Click"/>
                 </Border>
             </Grid>
         </Border>

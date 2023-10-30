@@ -36,16 +36,30 @@ namespace SiTandurWPFApp
             petaniDataGrid.ItemsSource = petani;
         }
 
+        private void BtnAdminMenambahPetani_Click(object sender, RoutedEventArgs e)
+        {
+            AdminMenambahPetaniWindow adminMenambahPetaniWindow = new AdminMenambahPetaniWindow();
+            adminMenambahPetaniWindow.Show();
+        }
+
         private void BtnTableUbahPetani_Click(object sender, RoutedEventArgs e)
         {
-            //AdminMengeditPetaniWindow adminEditPetaniWindow = new AdminMengeditPetaniWindow();
-            //adminEditPetaniWindow.Show();
+            AdminMengeditPetaniWindow adminEditPetaniWindow = new AdminMengeditPetaniWindow();
+            adminEditPetaniWindow.Show();
         }
 
         private void petaniDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
+
+        private void BtnTabelHapusPetani_Click(object sender, RoutedEventArgs e)
+        {
+            AdminHapusData adminHapusData = new AdminHapusData();
+            adminHapusData.Show();
+        }
+
+
     }
     
 }

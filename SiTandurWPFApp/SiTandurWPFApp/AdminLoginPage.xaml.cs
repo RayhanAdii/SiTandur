@@ -42,9 +42,9 @@ namespace SiTandurWPFApp
         {
             if (!string.IsNullOrEmpty(txtName.Text) && !string.IsNullOrEmpty(passwordBox.Password))
             {
-                PetaniDashboard petanidashboard = new PetaniDashboard();
+                AdminDasbor adminDasbor = new AdminDasbor();
                 this.Close();
-                petanidashboard.Show();
+                adminDasbor.Show();
             }
         }
 

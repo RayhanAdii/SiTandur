@@ -23,5 +23,12 @@ namespace SiTandurWPFApp
         {
             InitializeComponent();
         }
+
+        private void BtnWelcomePageMasuk_Click(object sender, RoutedEventArgs e)
+        {
+            PetaniLoginPage petaniLoginPage = new PetaniLoginPage();
+            this.Close();
+            petaniLoginPage.Show();
+        }
     }
 }

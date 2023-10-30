@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo-std.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logositandur.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/novice.png")]
 
 
