@@ -66,3 +66,6 @@ D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp
 D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
 D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\DataHasilPanenPage.g.cs
 D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\DataHasilPanenPage.baml
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\Images\novice.png
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\SiTandurWPFApp_Content.g.cs
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\Images\logo-std.png

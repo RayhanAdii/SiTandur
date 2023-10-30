@@ -13,7 +13,7 @@
             BorderThickness="2" CornerRadius="10" Padding="30" Background="White">
             <StackPanel>
 
-                <Image Source="D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\Images\logo-std.png"  Height="88" Width="196"/>
+                <Image Source="\Images\logo-std.png"  Height="88" Width="196"/>
 
                 <TextBlock Foreground="Black" FontWeight="Bold" FontSize="20" Margin="0 0 0 0" Text="Masuk Sebagai" HorizontalAlignment="Center"/>
                 <StackPanel Orientation="Horizontal" Width="352">

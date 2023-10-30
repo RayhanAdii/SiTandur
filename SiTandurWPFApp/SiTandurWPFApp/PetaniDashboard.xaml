@@ -41,7 +41,7 @@
                          Style="{StaticResource MenuButton}" Checked="DataHasilPanen_Checked" />
         </StackPanel>
 
-        <Image Source="D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\Images\novice.png" HorizontalAlignment="Left" Height="48" Margin="30,34,0,0" VerticalAlignment="Top" Width="48"/>
+        <Image Source="\Images\novice.png" HorizontalAlignment="Left" Height="48" Margin="30,34,0,0" VerticalAlignment="Top" Width="48"/>
 
 
         <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="38,69,311,376" CornerRadius="8

@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:SiTandurWPFApp"
              StartupUri="PetaniLoginPage.xaml">
     <Application.Resources>
+        
+        
 
         <Style x:Key="DataGridRowStyle1" TargetType="{x:Type DataGridRow}">
             <Setter Property="Background" Value="White"/>

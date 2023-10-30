@@ -23,6 +23,7 @@ namespace SiTandurWPFApp
         public MainWindow()
         {
             InitializeComponent();
+            this.Content = new PetaniLoginPage();
         }
     }
 }
