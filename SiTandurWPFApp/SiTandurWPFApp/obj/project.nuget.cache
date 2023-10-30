@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RSJmvQFXAGuQkyjAcHFpc2cCf+7jpmK7vTOG6EY5psGS7czbDbxW1Zf4ODfh+ALjZRQi/FfSBsCbGxGsIr+ZSA==",
+  "dgSpecHash": "jTXnj8RJtAmCtiUAbcA0LKYLyeuAaps12NNeSjb9kUk8ZHPX0AIPK5kQpXDA/h68FfUyDpcwAD1WhSTvw6S+Lg==",
   "success": true,
-  "projectFilePath": "D:\\Programs\\AAA Junior Project\\hasilpanen\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\SiTandurWPFApp.csproj",
+  "projectFilePath": "D:\\Kuliah\\5th_semester\\IT Junior Project\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\SiTandurWPFApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
