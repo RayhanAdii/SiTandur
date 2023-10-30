@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\App.xaml
-8-2072485565
+11-767596020
 2770092936
-13-1492240295
+16533476162
 2291565394318
-AddHasilPanen.xaml;AdminLoginPage.xaml;AdminMenambahPetaniWindow.xaml;AdminMengeditPetaniWindow.xaml;DataHasilPanenPage.xaml;MainWindow.xaml;PetaniDashboard.xaml;PetaniLoginPage.xaml;
+AddHasilPanen.xaml;AdminDasbor.xaml;AdminHapusData.xaml;AdminLoginPage.xaml;AdminMenambahPetaniWindow.xaml;AdminMengeditPetaniWindow.xaml;DataHasilPanenPage.xaml;MainWindow.xaml;PetaniDashboard.xaml;PetaniLoginPage.xaml;WelcomePage.xaml;
 
 False
 

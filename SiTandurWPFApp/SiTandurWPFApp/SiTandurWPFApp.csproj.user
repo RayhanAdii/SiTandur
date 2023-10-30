@@ -27,6 +27,12 @@
     <Page Update="AddHasilPanen.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="AdminDasbor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminHapusData.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="AdminLoginPage.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -46,6 +52,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PetaniLoginPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WelcomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
