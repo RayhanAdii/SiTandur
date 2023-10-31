@@ -48,17 +48,26 @@
             </Image.CacheMode>
         </Image>
 
+        <!--<Button x:Name="BtnTambahHasilPanen" Content="Ubah" Width="55" Height="23" Margin="21,92,689,469" Foreground="White"  Background="#FF52A155" BorderBrush="#FF52A155" Click="BtnTambahHasilPanen_Click" Grid.Column="1">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#FF52A155" BorderBrush="#FF52A155" BorderThickness="0" CornerRadius="5" Margin="0,0,-25,0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>-->
+
         <!--Datagrid-->
 
-        <DataGrid AutoGenerateColumns="False"  CanUserAddRows = "False" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeader1}"  RowStyle="{DynamicResource DataGridRowStyle1}" x:Name="hasilPanenDataGrid" GridLinesVisibility="None" Margin="21,78,10,205" SelectionChanged="petaniDataGrid_SelectionChanged" Grid.Column="1">
+        <DataGrid HeadersVisibility="Column" AutoGenerateColumns="False"  CanUserAddRows = "False" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeader1}"  RowStyle="{DynamicResource DataGridRowStyle1}" x:Name="hasilPanenDataGrid" GridLinesVisibility="None" Margin="21,121,10,223" SelectionChanged="petaniDataGrid_SelectionChanged" Grid.Column="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="No" Binding ="{Binding NoPanen}" IsReadOnly="True" CanUserResize="False" Width="40"/>
                 <DataGridTextColumn Header="Tanggal Panen" Binding ="{Binding TanggalPanen}" IsReadOnly="True" Width="80"/>
                 <DataGridTextColumn Header="ID Panen" Binding ="{Binding IDPanen}" IsReadOnly="True" Width="60"/>
                 <DataGridTextColumn Header="Nama Tanaman" Binding ="{Binding NamaTanaman}" IsReadOnly="True"  Width="90"/>
-                <DataGridTextColumn Header="Lokasi" Binding ="{Binding LokasiPanen}" IsReadOnly="True"  Width="79"/>
-                <DataGridTextColumn Header="Nama Petani" Binding ="{Binding NamaPetani}" IsReadOnly="True" Width="70"/>
-                <DataGridTextColumn Header="Berat (kg)" Binding ="{Binding BeratHasilPanen}" IsReadOnly="True"  Width="70"/>
+                <DataGridTextColumn Header="Lokasi" Binding ="{Binding LokasiPanen}" IsReadOnly="True"  Width="100"/>
+                <DataGridTextColumn Header="Nama Petani" Binding ="{Binding NamaPetani}" IsReadOnly="True" Width="100"/>
+                <DataGridTextColumn Header="Berat (kg)" Binding ="{Binding BeratHasilPanen}" IsReadOnly="True"  Width="60"/>
 
                 <DataGridTemplateColumn Header="Aksi"  Width="*">
                     <DataGridTemplateColumn.CellTemplate>
@@ -91,10 +100,14 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Grid.Column="1" Content="+ Tambah" HorizontalAlignment="Left" Margin="286,39,0,0" VerticalAlignment="Top" Width="77" Height="28" Click="BtnTabelTambahHasilPanen_Click"/>
-        <Label Content="Data Hasil Panen" FontSize="30" Grid.Column="1" Margin="30,0,440,511" Height="48" VerticalAlignment="Bottom"/>
-
+        <!--Datagrid-->
+        <!--<Button Grid.Column="1" Content="+ Tambah" HorizontalAlignment="Left" Margin="21,95,0,0" VerticalAlignment="Top" Width="77" Height="28" Background="Transparent" Foreground="#52A155" BorderThickness="0" Click="BtnTabelTambahHasilPanen_Click"/>-->
+        <!--<Button x:Name="BtnTabelTambahHasilPanen" Content="+ Tambah" FontSize="12" Background="Transparent" Foreground="#52A155" Padding="14,6,14,7" Margin="286,39,0,0"  BorderThickness="0" Click="BtnTabelTambahHasilPanen_Click"/>-->
+        <Label Content="Data Hasil Panen" FontSize="30" Grid.Column="1" Margin="21,0,449,514" Height="48" VerticalAlignment="Bottom"/>
+        <Button Content="+ Tambah" Click="BtnTambahHasilPanen_Click" Style="{StaticResource spclBTN}"  Grid.Column="1" Margin="21,59,622,460" />
 
 
     </Grid>
+
+
 </Window>

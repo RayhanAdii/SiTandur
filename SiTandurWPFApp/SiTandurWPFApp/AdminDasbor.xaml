@@ -45,7 +45,7 @@
         </Grid>
 
         <!--Datagrid-->
-        <DataGrid Height="180" AutoGenerateColumns="False"  CanUserAddRows = "False" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeader1}"  RowStyle="{DynamicResource DataGridRowStyle1}" x:Name="petaniDataGrid" GridLinesVisibility="None" Margin="28,362,23,42" SelectionChanged="petaniDataGrid_SelectionChanged">
+        <DataGrid HeadersVisibility="Column" Height="180" AutoGenerateColumns="False"  CanUserAddRows = "False" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeader1}"  RowStyle="{DynamicResource DataGridRowStyle1}" x:Name="petaniDataGrid" GridLinesVisibility="None" Margin="28,362,23,42" SelectionChanged="petaniDataGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="No" Binding ="{Binding IDPetani}" IsReadOnly="True" CanUserResize="False" Width="40"/>
                 <DataGridTextColumn Header="Nama Petani" Binding ="{Binding NamaPetani}" IsReadOnly="True" Width="144"/>

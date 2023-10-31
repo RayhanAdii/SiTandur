@@ -32,6 +32,7 @@ namespace SiTandurWPFApp
         {
             InitializeComponent();
 
+
             ObservableCollection<HasilPanen> hasilPanen = new ObservableCollection<HasilPanen>();
 
             hasilPanen.Add(new HasilPanen
@@ -115,6 +116,17 @@ namespace SiTandurWPFApp
         private void petaniDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void BtnTambahHasilPanen_Click(object sender, RoutedEventArgs e)
+        {
+            AddHasilPanen addHasilPanen = new AddHasilPanen();
+            addHasilPanen.Show();
+        }
+
+        private void BtnPetaniMenambahHasilPanen_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
