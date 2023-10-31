@@ -40,6 +40,11 @@
                      Foreground="White"
                      FontSize="16"
                      Style="{StaticResource MenuSelectedButton}"/>
+            <RadioButton x:Name="radioBtnLogOut" Content="    Log Out"
+                     Height="50"
+                     Foreground="White"
+                     FontSize="16"
+                     Style="{StaticResource MenuButton}" Checked="radioBtnLogOut_Checked"/>
         </StackPanel>
 
         <Image Source="\Images\novice.png" HorizontalAlignment="Left" Height="48" Margin="30,34,0,0" VerticalAlignment="Top" Width="48">
@@ -104,8 +109,7 @@
         <!--<Button Grid.Column="1" Content="+ Tambah" HorizontalAlignment="Left" Margin="21,95,0,0" VerticalAlignment="Top" Width="77" Height="28" Background="Transparent" Foreground="#52A155" BorderThickness="0" Click="BtnTabelTambahHasilPanen_Click"/>-->
         <!--<Button x:Name="BtnTabelTambahHasilPanen" Content="+ Tambah" FontSize="12" Background="Transparent" Foreground="#52A155" Padding="14,6,14,7" Margin="286,39,0,0"  BorderThickness="0" Click="BtnTabelTambahHasilPanen_Click"/>-->
         <Label Content="Data Hasil Panen" FontSize="30" Grid.Column="1" Margin="21,0,449,514" Height="48" VerticalAlignment="Bottom"/>
-        <Button Content="+ Tambah" Click="BtnTambahHasilPanen_Click" Style="{StaticResource spclBTN}"  Grid.Column="1" Margin="21,59,622,460" />
-
+        <Button x:Name="btnTambahHasilPanen" Content="+ Tambah" Click="BtnTambahHasilPanen_Click" Style="{StaticResource spclBTN}"  Grid.Column="1" Margin="21,59,622,460" />
 
     </Grid>
 

@@ -31,5 +31,12 @@ namespace SiTandurWPFApp
             this.Close();
             dataHasilPanen.Show();
         }
+
+        private void radioBtnLogOut_Checked(object sender, RoutedEventArgs e)
+        {
+            WelcomePage welcomePage = new WelcomePage();
+            this.Close();
+            welcomePage.Show();
+        }
     }
 }
