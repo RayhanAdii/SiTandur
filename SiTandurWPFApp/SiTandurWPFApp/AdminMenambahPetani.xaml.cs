@@ -15,23 +15,28 @@ using System.Windows.Shapes;
 namespace SiTandurWPFApp
 {
     /// <summary>
-    /// Interaction logic for AdminMenambahPetaniWindow.xaml
+    /// Interaction logic for AdminMenambahPetani.xaml
     /// </summary>
-    public partial class AdminMenambahPetaniWindow : Window
+    public partial class AdminMenambahPetani : Window
     {
-        public AdminMenambahPetaniWindow()
+        public AdminMenambahPetani()
         {
             InitializeComponent();
+        }
+
+        private void AdminAddKelompokPetani_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void BtnAdminSimpanTambahPetani_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
 
         private void BtnAdminBatalTambahPetani_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-        }
-
-        private void BtnAdminSimpanTambahPetani_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();  
         }
     }
 }

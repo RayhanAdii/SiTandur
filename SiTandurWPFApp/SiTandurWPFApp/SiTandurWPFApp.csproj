@@ -16,6 +16,7 @@
   <ItemGroup>
     <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
     <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
+    <PackageReference Include="Npgsql" Version="7.0.6" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +29,12 @@
     <Content Include="Images\novice.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="AdminMenambahPetaniWindow2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
 </Project>

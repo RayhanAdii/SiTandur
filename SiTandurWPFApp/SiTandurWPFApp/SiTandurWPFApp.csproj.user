@@ -13,6 +13,9 @@
     <Compile Update="AdminLoginPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AdminMenambahPetani.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="DataHasilPanenPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -36,7 +39,7 @@
     <Page Update="AdminLoginPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="AdminMenambahPetaniWindow.xaml">
+    <Page Update="AdminMenambahPetani.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AdminMengeditPetaniWindow.xaml">

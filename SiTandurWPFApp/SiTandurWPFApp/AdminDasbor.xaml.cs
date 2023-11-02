@@ -38,8 +38,8 @@ namespace SiTandurWPFApp
 
         private void BtnAdminMenambahPetani_Click(object sender, RoutedEventArgs e)
         {
-            AdminMenambahPetaniWindow adminMenambahPetaniWindow = new AdminMenambahPetaniWindow();
-            adminMenambahPetaniWindow.Show();
+            AdminMenambahPetani adminMenambahPetani = new AdminMenambahPetani();
+            adminMenambahPetani.Show();
         }
 
         private void BtnTableUbahPetani_Click(object sender, RoutedEventArgs e)
