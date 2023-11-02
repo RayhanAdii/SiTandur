@@ -8,7 +8,7 @@ Anggota 1: Rayhan Adi Wicaksono-21/477186/TK/52550<br>
 Anggota 2: Daffa Kamal-21/477293/TK/52564<br>
 
 <br> Kategori: Aplikasi produktivitas pertanian
-<br> Tipe Aplikasi: Desktop App menggunakan Windows Forms App
+<br> Tipe Aplikasi: Desktop App menggunakan Windows Presentation Foundation (WPF) C#
 
 ## Permasalahan yang dipecahkan:
 Minimnya sistem terintegrasi untuk pencatatan hasil panen pertanian di Indonesia (Sensus yang diadakan oleh Badan Pusat Statistik dilakukan sedikitnya empat tahun sekali. Sumber: Badan Pusat Statistik (bps.go.id))
