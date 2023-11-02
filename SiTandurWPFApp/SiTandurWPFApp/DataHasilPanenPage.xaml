@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SiTandurWPFApp"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="DataHasilPanenPage" Height="600" Width="1000">
+        Title="DataHasilPanenPage" Height="600" Width="1200">
 
 
     <Grid>
@@ -66,14 +66,16 @@
 
         <DataGrid HeadersVisibility="Column" AutoGenerateColumns="False"  CanUserAddRows = "False" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeader1}"  RowStyle="{DynamicResource DataGridRowStyle1}" x:Name="hasilPanenDataGrid" GridLinesVisibility="None" Margin="21,121,10,223" SelectionChanged="petaniDataGrid_SelectionChanged" Grid.Column="1">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="No" Binding ="{Binding NoPanen}" IsReadOnly="True" CanUserResize="False" Width="40"/>
-                <DataGridTextColumn Header="Tanggal Panen" Binding ="{Binding TanggalPanen}" IsReadOnly="True" Width="80"/>
-                <DataGridTextColumn Header="ID Panen" Binding ="{Binding IDPanen}" IsReadOnly="True" Width="60"/>
-                <DataGridTextColumn Header="Nama Tanaman" Binding ="{Binding NamaTanaman}" IsReadOnly="True"  Width="90"/>
-                <DataGridTextColumn Header="Lokasi" Binding ="{Binding LokasiPanen}" IsReadOnly="True"  Width="100"/>
+                <DataGridTextColumn Header="ID Panen" Binding ="{Binding IDHasilPanen}" IsReadOnly="True" CanUserResize="False" Width="60"/>
+                <DataGridTextColumn Header="Tanggal" Binding ="{Binding TanggalPanen}" IsReadOnly="True" Width="70"/>
+                <!--<DataGridTextColumn Header="ID Panen" Binding ="{Binding IDPanen}" IsReadOnly="True" Width="60"/>-->
+                <DataGridTextColumn Header="Nama Tanaman" Binding ="{Binding NamaTanaman}" IsReadOnly="True"  Width="100"/>
+                <DataGridTextColumn Header="Lokasi" Binding ="{Binding LokasiPanen}" IsReadOnly="True"  Width="130"/>
                 <DataGridTextColumn Header="Nama Petani" Binding ="{Binding NamaPetani}" IsReadOnly="True" Width="100"/>
-                <DataGridTextColumn Header="Berat (kg)" Binding ="{Binding BeratHasilPanen}" IsReadOnly="True"  Width="60"/>
-
+                <DataGridTextColumn Header="Berat (kg)" Binding ="{Binding BeratHasilPanen}" IsReadOnly="True"  Width="100"/>
+                <DataGridTextColumn Header="Harga Pasar (Rp)" Binding ="{Binding HargaPasar}" IsReadOnly="True"  Width="100"/>
+                <DataGridTextColumn Header="Harga Jual (Rp)" Binding ="{Binding HargaJual}" IsReadOnly="True"  Width="100"/>
+                
                 <DataGridTemplateColumn Header="Aksi"  Width="*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -109,7 +111,7 @@
         <!--<Button Grid.Column="1" Content="+ Tambah" HorizontalAlignment="Left" Margin="21,95,0,0" VerticalAlignment="Top" Width="77" Height="28" Background="Transparent" Foreground="#52A155" BorderThickness="0" Click="BtnTabelTambahHasilPanen_Click"/>-->
         <!--<Button x:Name="BtnTabelTambahHasilPanen" Content="+ Tambah" FontSize="12" Background="Transparent" Foreground="#52A155" Padding="14,6,14,7" Margin="286,39,0,0"  BorderThickness="0" Click="BtnTabelTambahHasilPanen_Click"/>-->
         <Label Content="Data Hasil Panen" FontSize="30" Grid.Column="1" Margin="21,0,449,514" Height="48" VerticalAlignment="Bottom"/>
-        <Button x:Name="btnTambahHasilPanen" Content="+ Tambah" Click="BtnTambahHasilPanen_Click" Style="{StaticResource spclBTN}"  Grid.Column="1" Margin="21,59,622,460" />
+        <Button x:Name="btnTambahHasilPanen" Content="+ Tambah" Click="BtnTambahHasilPanen_Click" Style="{StaticResource spclBTN}"  Grid.Column="1" Margin="45,59,778,460" />
 
     </Grid>
 
