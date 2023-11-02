@@ -34,23 +34,36 @@ namespace SiTandurWPFApp
 
             string connstring = "Host=localhost;port=5432;Username=adminsitandur;Password=halo123;Database=sitandur";
             conn = new NpgsqlConnection(connstring);
-            
-            
+
 
             try
             {
                 conn.Open();
 
-                DataTable dataTable = new DataTable();
-                //string query = @"select * from st_select_petani()";
-                string query = @"select petaniid, namapetani, kelompoktani, alamatpetani, usiapetani from petani";
-                NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
-                var reader = cmd.ExecuteReader();
-                dataTable.Load (reader);
+                //Show Petani
+                DataTable dataTableShowPetani = new DataTable();
+                string queryShowPetani = @"select petaniid, namapetani, kelompoktani, alamatpetani, usiapetani from petani";
+                NpgsqlCommand cmdPetani = new NpgsqlCommand(queryShowPetani, conn);
+                var readerPetani = cmdPetani.ExecuteReader();
+                dataTableShowPetani.Load (readerPetani);
 
-                List<Petani> petaniList = ConvertDataTableToList(dataTable);
+                List<Petani> petaniList = ConvertDataTableToListPetani(dataTableShowPetani);
                 
                 petaniDataGrid.ItemsSource = petaniList;
+
+
+                //Show Tanaman
+                DataTable dataTableShowTanaman = new DataTable();
+                string queryShowTanaman = @"select tanamanid, namatanaman, hargapasar from tanaman";
+                NpgsqlCommand cmdTanaman = new NpgsqlCommand(queryShowTanaman, conn);
+                var readerTanaman= cmdTanaman.ExecuteReader();
+                dataTableShowTanaman.Load(readerTanaman);
+
+                List<Tanaman> tanamanList = ConvertDataTableToListTanaman(dataTableShowTanaman);
+
+                tanamanDataGrid.ItemsSource = tanamanList;
+
+
 
             }
             catch (Exception ex)
@@ -63,7 +76,7 @@ namespace SiTandurWPFApp
 
 
 
-        private List<Petani> ConvertDataTableToList(DataTable dataTable)
+        private List<Petani> ConvertDataTableToListPetani(DataTable dataTable)
         {
             List<Petani> petaniList = new List<Petani>();
             foreach (DataRow dr in dataTable.Rows)
@@ -82,7 +95,23 @@ namespace SiTandurWPFApp
             return petaniList;
         }
 
-        //private DataGridView r;
+        private List<Tanaman> ConvertDataTableToListTanaman(DataTable dataTable)
+        {
+            List<Tanaman> tanamanList = new List<Tanaman>();
+            foreach (DataRow dr in dataTable.Rows)
+            {
+                Tanaman tanaman = new Tanaman
+                {
+                    IDTanaman = (int)dr["tanamanid"],
+                    NamaTanaman = dr["namatanaman"].ToString(),
+                    HargaPasar = (int)dr["hargapasar"]
+
+                };
+                tanamanList.Add(tanaman);
+            }
+            return tanamanList;
+        }
+
 
         private void BtnAdminMenambahPetani_Click(object sender, RoutedEventArgs e)
         {
@@ -123,4 +152,11 @@ public class Petani
     public string KelompokTani { get; set; }
     public string AlamatPetani { get; set; }
     public int UsiaPetani { get; set; }
+}
+
+public class Tanaman
+{
+    public int IDTanaman { get; set; }
+    public string NamaTanaman { get; set; }
+    public int HargaPasar { get; set; }
 }
