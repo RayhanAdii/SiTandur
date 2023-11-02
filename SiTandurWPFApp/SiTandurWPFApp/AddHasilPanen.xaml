@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:SiTandurWPFApp"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="AddHasilPanen" Height="721" Width="565">
+        Title="AddHasilPanen" Height="550" Width="565">
 
     <Grid Width="479" Height="418" VerticalAlignment="Top" Margin="0,40,0,0">
         <TextBlock HorizontalAlignment="Left" Margin="62,0,0,0" TextWrapping="Wrap" Text="Tambah Data Hasil Panen" VerticalAlignment="Top" FontSize="16" FontFamily="./Inter-Regular.ttf"/>
 
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,79,62,300" CornerRadius="8"
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,68,62,311" CornerRadius="8"
             Width="355" Background="#FFECECEC">
             <Grid Margin="7 9">
                 <Grid.ColumnDefinitions>
@@ -24,10 +24,10 @@
 
             </Grid>
         </Border>
-        <TextBlock HorizontalAlignment="Left" Margin="62,56,0,0" TextWrapping="Wrap" Text="Tanggal Panen" VerticalAlignment="Top" FontSize="13" FontFamily="./Inter-Regular.ttf"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,45,0,0" TextWrapping="Wrap" Text="Tanggal Panen" VerticalAlignment="Top" FontSize="13" FontFamily="./Inter-Regular.ttf"/>
 
 
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,146,62,233" CornerRadius="8
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,135,62,244" CornerRadius="8
             " Width="355" Background="#FFECECEC">
             <Grid Margin="7 9">
                 <Grid.ColumnDefinitions>
@@ -36,17 +36,15 @@
                     <ColumnDefinition Width="34*"/>
                 </Grid.ColumnDefinitions>
 
-                <ComboBox x:Name="UserAddTanaman" Style="{StaticResource textBox}" Grid.ColumnSpan="3" Margin="10,0,0,0" Background="#FFECECEC">
-                    <ComboBoxItem Content="Padi"/>
-                    <ComboBoxItem Content="Jagung"/>
-                    <ComboBoxItem Content="Apel"/>
+                <ComboBox x:Name="UserAddTanaman" Style="{StaticResource textBox}" Grid.ColumnSpan="3" Margin="10,0,0,0" Background="#FFECECEC" ItemsSource="{Binding}">
+
                 </ComboBox>
 
             </Grid>
         </Border>
-        <TextBlock HorizontalAlignment="Left" Margin="62,123,0,0" TextWrapping="Wrap" Text="Komoditas" VerticalAlignment="Top" FontSize="13" FontFamily="./Inter-Regular.ttf"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,112,0,0" TextWrapping="Wrap" Text="Tanaman" VerticalAlignment="Top" FontSize="13" FontFamily="./Inter-Regular.ttf"/>
 
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,213,62,166" CornerRadius="8
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,202,62,177" CornerRadius="8
             " Width="355" Background="#FFECECEC">
             <Grid Margin="7 9">
 
@@ -54,9 +52,9 @@
 
             </Grid>
         </Border>
-        <TextBlock HorizontalAlignment="Left" Margin="62,190,0,0" TextWrapping="Wrap" Text="Lokasi Panen" VerticalAlignment="Top" FontSize="13" FontFamily="./Inter-Regular.ttf"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,179,0,0" TextWrapping="Wrap" Text="Lokasi Panen" VerticalAlignment="Top" FontSize="13" FontFamily="./Inter-Regular.ttf"/>
 
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,280,62,99" CornerRadius="8
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,269,62,110" CornerRadius="8
             " Width="355" Background="#FFECECEC">
             <Grid Margin="7 9">
                 <Grid.ColumnDefinitions>
@@ -65,16 +63,14 @@
                     <ColumnDefinition Width="34*"/>
                 </Grid.ColumnDefinitions>
 
-                <ComboBox x:Name="UserAddPetani" Style="{StaticResource textBox}" Grid.ColumnSpan="3" Margin="10,0,0,0" Background="#FFECECEC">
-                    <ComboBoxItem Content="Bueka"/>
-                    <ComboBoxItem Content="Sekai"/>
-                    <ComboBoxItem Content="Thuok"/>
+                <ComboBox x:Name="UserAddPetani" Style="{StaticResource textBox}" Grid.ColumnSpan="3" Margin="10,0,0,0" Background="#FFECECEC" ItemsSource="{Binding}">
+
                 </ComboBox>
             </Grid>
         </Border>
-        <TextBlock HorizontalAlignment="Left" Margin="62,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13" Height="18" ><Run Text="Petani Pemanen" FontFamily="./Inter-Regular.ttf"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="62,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13" Height="18" ><Run Text="Petani Pemanen" FontFamily="./Inter-Regular.ttf"/><LineBreak/><Run/></TextBlock>
 
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,352,62,26" CornerRadius="8"
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,341,62,37" CornerRadius="8"
             Width="355" Background="#FFECECEC">
             <Grid Margin="7 9">
                 <Grid.ColumnDefinitions>
@@ -87,26 +83,11 @@
 
             </Grid>
         </Border>
-        <TextBlock HorizontalAlignment="Left" Margin="62,331,0,0" TextWrapping="Wrap" Text="Berat Hasil Panen (kilogram)" VerticalAlignment="Top" FontSize="13" FontFamily="./Inter-Regular.ttf"/>
-
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="64,423,60,-87" CornerRadius="8"
-       Width="355" Background="#FFECECEC">
-            <Grid Margin="7 9">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="auto" />
-                    <ColumnDefinition Width="79*" />
-                    <ColumnDefinition Width="34*"/>
-                </Grid.ColumnDefinitions>
-
-                <TextBox x:Name="UserAddNote" Style="{StaticResource textBox}" Grid.ColumnSpan="3" Margin="10,0,0,0" Background="#FFECECEC" />
-
-            </Grid>
-        </Border>
-        <TextBlock HorizontalAlignment="Left" Margin="64,402,0,0" TextWrapping="Wrap" Text="Catatan" VerticalAlignment="Top" FontSize="13" FontFamily="./Inter-Regular.ttf"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,320,0,0" TextWrapping="Wrap" Text="Berat Hasil Panen (kilogram)" VerticalAlignment="Top" FontSize="13" FontFamily="./Inter-Regular.ttf"/>
 
 
 
-        <Button x:Name="BtnSimpanRecord" Content="Simpan" Width="73" Height="24" Foreground="White" Margin="175,553,231,-159" Background="#FF52A155" BorderBrush="#FF52A155" Click="BtnSimpanRecord_Click">
+        <Button x:Name="BtnSimpanRecord" Content="Simpan" Width="73" Height="24" Foreground="White" Margin="175,423,231,-29" Background="#FF52A155" BorderBrush="#FF52A155" Click="BtnSimpanRecord_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="#FF52A155" BorderBrush="#FF52A155" BorderThickness="0" CornerRadius="8">
@@ -116,7 +97,7 @@
             </Button.Template>
         </Button>
 
-        <Button x:Name="BtnBatalRecord" Content="Batal" Width="73" Height="24" Foreground="White" Margin="255,553,151,-159" Background="#FFBE5858" BorderBrush="#FF52A155" Click="BtnBatalRecord_Click">
+        <Button x:Name="BtnBatalRecord" Content="Batal" Width="73" Height="24" Foreground="White" Margin="255,423,151,-29" Background="#FFBE5858" BorderBrush="#FF52A155" Click="BtnBatalRecord_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="#FFBE5858" BorderBrush="#FFBE5858" BorderThickness="0" CornerRadius="8">
