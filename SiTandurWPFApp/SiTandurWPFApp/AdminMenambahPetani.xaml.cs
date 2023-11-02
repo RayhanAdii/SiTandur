@@ -64,6 +64,9 @@ namespace SiTandurWPFApp
                 }
                 conn.Close();
 
+                AdminDasbor adminDasbor = new AdminDasbor();
+                adminDasbor.Show();
+
                 this.Close();
             }
             catch (Exception ex)

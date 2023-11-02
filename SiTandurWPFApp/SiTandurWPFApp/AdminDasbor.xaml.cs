@@ -116,6 +116,7 @@ namespace SiTandurWPFApp
         private void BtnAdminMenambahPetani_Click(object sender, RoutedEventArgs e)
         {
             AdminMenambahPetani adminMenambahPetani = new AdminMenambahPetani();
+            this.Close();
             adminMenambahPetani.Show();
         }
 
@@ -140,6 +141,13 @@ namespace SiTandurWPFApp
         {
 
 
+        }
+
+        private void btnAdminMenambahTanaman_Click(object sender, RoutedEventArgs e)
+        {
+            AdminMenambahTanamanWindow adminMenambahTanamanWindow = new AdminMenambahTanamanWindow();
+            this.Close();
+            adminMenambahTanamanWindow.Show();
         }
     }
     

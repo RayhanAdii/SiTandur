@@ -86,7 +86,7 @@
             <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,300,0,0">
                 <TextBlock Text="Manajemen Data Tanaman" FontSize="18" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,281,0,0"/>
                 <Border Background="Transparent" CornerRadius="8" BorderBrush="#52A155" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,320,0,0">
-                    <Button x:Name="btnAdminMenambahTanaman" Content="+ Tambah" FontSize="12" Background="Transparent" Foreground="#52A155" Padding="14,6,14,7" BorderThickness="0" Click="BtnAdminMenambahPetani_Click"/>
+                    <Button x:Name="btnAdminMenambahTanaman" Content="+ Tambah" FontSize="12" Background="Transparent" Foreground="#52A155" Padding="14,6,14,7" BorderThickness="0" Click="btnAdminMenambahTanaman_Click" />
                 </Border>
             </Grid>
             <DataGrid HeadersVisibility="Column" Height="180" AutoGenerateColumns="False"  CanUserAddRows = "False" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeader1}"  RowStyle="{DynamicResource DataGridRowStyle1}" x:Name="tanamanDataGrid" GridLinesVisibility="None" Margin="28,671,252,33" SelectionChanged="petaniDataGrid_SelectionChanged">
