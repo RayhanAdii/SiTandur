@@ -126,7 +126,7 @@ namespace SiTandurWPFApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SiTandurWPFApp;component/petanidashboard.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SiTandurWPFApp;V1.0.0.0;component/petanidashboard.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\PetaniDashboard.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

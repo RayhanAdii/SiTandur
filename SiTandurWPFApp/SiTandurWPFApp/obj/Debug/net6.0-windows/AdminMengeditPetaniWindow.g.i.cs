@@ -101,7 +101,7 @@ namespace SiTandurWPFApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SiTandurWPFApp;component/adminmengeditpetaniwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SiTandurWPFApp;V1.0.0.0;component/adminmengeditpetaniwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AdminMengeditPetaniWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
