@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Npgsql;
+using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,21 +23,66 @@ namespace SiTandurWPFApp
     /// </summary>
     public partial class AdminDasbor : Window
     {
+        public DataTable dtDataPetani;
+        public static NpgsqlCommand cmd;
+        private string sql = null;
+        private NpgsqlConnection conn;
+
         public AdminDasbor()
         {
             InitializeComponent();
 
-            ObservableCollection<Petani> petani = new ObservableCollection<Petani>();
+            string connstring = "Host=localhost;port=5432;Username=adminsitandur;Password=halo123;Database=sitandur";
+            conn = new NpgsqlConnection(connstring);
+            
+            
 
-            petani.Add(new Petani { IDPetani = 1, NamaPetani = "John Doe", KelompokTani = "Farmers Group A", AlamatPetani = "123 Main St", UsiaPetani = "35" });
-            petani.Add(new Petani { IDPetani = 2, NamaPetani = "Jane Smith", KelompokTani = "Farmers Group B", AlamatPetani = "456 Elm St", UsiaPetani = "28" });
-            petani.Add(new Petani { IDPetani = 3, NamaPetani = "Bob Johnson", KelompokTani = "Farmers Group A", AlamatPetani = "789 Oak St", UsiaPetani = "42" });
-            petani.Add(new Petani { IDPetani = 4, NamaPetani = "Alice Brown", KelompokTani = "Farmers Group C", AlamatPetani = "101 Pine St", UsiaPetani = "55" });
-            petani.Add(new Petani { IDPetani = 5, NamaPetani = "Charlie Lee", KelompokTani = "Farmers Group B", AlamatPetani = "202 Cedar St", UsiaPetani = "30" });
-            petani.Add(new Petani { IDPetani = 6, NamaPetani = "Handoko", KelompokTani = "Umbul Makmur", AlamatPetani = "Umbul Makmur No 12", UsiaPetani = "32" });
+            try
+            {
+                conn.Open();
 
-            petaniDataGrid.ItemsSource = petani;
+                DataTable dataTable = new DataTable();
+                //string query = @"select * from st_select_petani()";
+                string query = @"select petaniid, namapetani, kelompoktani, alamatpetani, usiapetani from petani";
+                NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
+                var reader = cmd.ExecuteReader();
+                dataTable.Load (reader);
+
+                List<Petani> petaniList = ConvertDataTableToList(dataTable);
+                
+                petaniDataGrid.ItemsSource = petaniList;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Pak" + ex) ;
+            }
+
+
         }
+
+
+
+        private List<Petani> ConvertDataTableToList(DataTable dataTable)
+        {
+            List<Petani> petaniList = new List<Petani>();
+            foreach (DataRow dr in dataTable.Rows)
+            {
+                Petani petani = new Petani
+                {
+                    IDPetani = (int)dr["petaniid"],
+                    NamaPetani = dr["NamaPetani"].ToString(),
+                    KelompokTani = dr["KelompokTani"].ToString(),
+                    AlamatPetani = dr["AlamatPetani"].ToString(),
+                    UsiaPetani = (int)dr["UsiaPetani"]
+
+                };
+                petaniList.Add(petani);
+            }
+            return petaniList;
+        }
+
+        //private DataGridView r;
 
         private void BtnAdminMenambahPetani_Click(object sender, RoutedEventArgs e)
         {
@@ -59,7 +107,11 @@ namespace SiTandurWPFApp
             adminHapusData.Show();
         }
 
+        public void Admin_Window_Loaded(object sender, RoutedEventArgs e)
+        {
 
+
+        }
     }
     
 }
@@ -70,5 +122,5 @@ public class Petani
     public string NamaPetani { get; set; }
     public string KelompokTani { get; set; }
     public string AlamatPetani { get; set; }
-    public string UsiaPetani { get; set; }
+    public int UsiaPetani { get; set; }
 }

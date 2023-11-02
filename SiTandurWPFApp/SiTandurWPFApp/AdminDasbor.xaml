@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Background="#FCFCFC"
         ResizeMode="CanResizeWithGrip"
-        Title="AdminDasbor" Height="900" Width="800">
-    <Grid Height="884.04">
+        Title="AdminDasbor" Height="900" Width="800" Loaded="Admin_Window_Loaded">
+    <ScrollViewer  VerticalScrollBarVisibility="Auto">
+        <Grid Height="884.04">
         <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
             <TextBlock Text="Dasbor" FontSize="20" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="28,15,28,0"/>
             <TextBlock Text="Data Kelompok Tani" FontSize="18" Foreground="Black" Margin="0,45,0,0" Padding="28 15"/>
@@ -125,4 +126,5 @@
         </DataGrid>
 
     </Grid>
+    </ScrollViewer>
 </Window>
