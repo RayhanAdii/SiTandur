@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,26 +29,53 @@ namespace SiTandurWPFApp
 
         private void PetaniButton_Click(object sender, RoutedEventArgs e)
         {
-            // Create a new instance of the UserLoginPage window
             PetaniLoginPage petaniLoginPage = new PetaniLoginPage();
-
-            //close current window
             this.Close();
-
-            // Show the new window
             petaniLoginPage.Show();
 
         }
 
+        private NpgsqlConnection conn;
+        string connstring = "Host=localhost;Port=5432;Username=postgres;Password=postgres123;Database=sitandur";
+        private DataTable dt;
+        private NpgsqlCommand cmd;
+        private string sql = null;
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtName.Text) && !string.IsNullOrEmpty(passwordBox.Password))
+            try
             {
-                AdminDasbor adminDasbor = new AdminDasbor();
-                this.Close();
-                adminDasbor.Show();
+                conn.Open();
+                sql = @"select * from adminlogin(:_emailadministrator,:_passwordadministrator)";
+                cmd = new NpgsqlCommand(sql, conn);
+
+                cmd.Parameters.AddWithValue("_emailadministrator", txtName.Text);
+                cmd.Parameters.AddWithValue("_passwordadministrator", passwordBox.Password);
+
+                int result = (int)cmd.ExecuteScalar();
+
+                conn.Close();
+
+                if (result == 1)
+                {
+                    AdminDasbor admindashboard = new AdminDasbor();
+                    this.Hide();
+                    admindashboard.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("Mohon cek email atau password", "Login Gagal", MessageBoxButton.OK);
+                    return;
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Something went wrong", MessageBoxButton.OK);
+                conn.Close();
             }
         }
+
 
         private void txtName_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
@@ -72,5 +101,11 @@ namespace SiTandurWPFApp
             else
                 textPassword.Visibility = Visibility.Visible;
         }
+
+        public void AdminLoginPage_Load(object sender, RoutedEventArgs e)
+        {
+            conn = new NpgsqlConnection(connstring);
+        }
     }
 }
+

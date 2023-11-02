@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SiTandurWPFApp"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="AdminMengeditPetaniWindow" Height="418" Width="479">
     <Grid Width="479" Height="418">
         <TextBlock HorizontalAlignment="Left" Margin="62,14,0,0" TextWrapping="Wrap" Text="Ubah Data" VerticalAlignment="Top" FontSize="16" FontFamily="./Inter-Regular.ttf"/>

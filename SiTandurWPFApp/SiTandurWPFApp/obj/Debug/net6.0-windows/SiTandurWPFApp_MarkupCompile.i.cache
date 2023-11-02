@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\
 SiTandurWPFApp
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\App.xaml
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\App.xaml
 11-767596020
 31368073956
 16533476162
-2291565394318
+2311365972402
 AddHasilPanen.xaml;AdminDasbor.xaml;AdminHapusData.xaml;AdminLoginPage.xaml;AdminMenambahPetaniWindow.xaml;AdminMengeditPetaniWindow.xaml;DataHasilPanenPage.xaml;MainWindow.xaml;PetaniDashboard.xaml;PetaniLoginPage.xaml;WelcomePage.xaml;
 
-True
+False
 

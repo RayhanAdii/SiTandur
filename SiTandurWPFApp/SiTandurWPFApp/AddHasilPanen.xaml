@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:SiTandurWPFApp"
         mc:Ignorable="d"
         ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
         Title="AddHasilPanen" Height="721" Width="565">
 
     <Grid Width="479" Height="418" VerticalAlignment="Top" Margin="0,40,0,0">

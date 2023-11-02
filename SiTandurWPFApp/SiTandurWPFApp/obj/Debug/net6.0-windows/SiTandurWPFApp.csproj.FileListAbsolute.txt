@@ -151,3 +151,16 @@ D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMengeditPetaniWindow.baml
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\WelcomePage.baml
 D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\Images\LogoSiTandur.png
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminDasbor.g.cs
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminHapusData.g.cs
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMenambahPetaniWindow.g.cs
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMengeditPetaniWindow.g.cs
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\WelcomePage.g.cs
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\Images\LogoSiTandur.png
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\bin\Debug\net6.0-windows\Npgsql.dll
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminDasbor.baml
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminHapusData.baml
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMenambahPetaniWindow.baml
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMengeditPetaniWindow.baml
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\WelcomePage.baml

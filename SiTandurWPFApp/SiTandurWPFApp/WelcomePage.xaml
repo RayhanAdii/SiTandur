@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Background="#52A155"
         ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
         Title="WelcomePage" Height="600" Width="800">
     <Grid>
         <Border Background="White" CornerRadius="24" Margin="186,150,186,150">

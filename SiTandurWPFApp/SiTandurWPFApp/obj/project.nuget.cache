@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "jTXnj8RJtAmCtiUAbcA0LKYLyeuAaps12NNeSjb9kUk8ZHPX0AIPK5kQpXDA/h68FfUyDpcwAD1WhSTvw6S+Lg==",
+  "dgSpecHash": "14NU6NA1NdSiyqwkbWIpPaSu3VkZMA/LqmmfDnFOlpa5CWRAZEtzf4bB3bWX9eLxVVSs4q0JKGkdg+QMW1XHkA==",
   "success": true,
-  "projectFilePath": "D:\\Kuliah\\5th_semester\\IT Junior Project\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\SiTandurWPFApp.csproj",
+  "projectFilePath": "D:\\Programs\\AAA Junior Project\\hasilpanen\\SiTandur\\SiTandurWPFApp\\SiTandurWPFApp\\SiTandurWPFApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
-    "C:\\Users\\LENOVO\\.nuget\\packages\\mahapps.metro.iconpacks\\4.11.0\\mahapps.metro.iconpacks.4.11.0.nupkg.sha512"
+    "C:\\Users\\LENOVO\\.nuget\\packages\\mahapps.metro.iconpacks\\4.11.0\\mahapps.metro.iconpacks.4.11.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": [
     {
