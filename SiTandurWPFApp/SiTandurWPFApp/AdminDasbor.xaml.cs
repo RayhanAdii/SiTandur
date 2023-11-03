@@ -152,6 +152,15 @@ namespace SiTandurWPFApp
             this.Close();
             adminMenambahTanamanWindow.Show();
         }
+
+ 
+        private void BtnTableUbahTanaman_Click(object sender, RoutedEventArgs e)
+        {
+            object IDTanaman = ((Button)sender).CommandParameter;
+
+            AdminMengeditTanaman adminEditTanaman = new AdminMengeditTanaman((int)IDTanaman);
+            adminEditTanaman.Show();
+        }
     }
     
 }
