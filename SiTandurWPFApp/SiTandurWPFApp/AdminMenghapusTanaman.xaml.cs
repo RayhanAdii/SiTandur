@@ -17,23 +17,23 @@ using System.Windows.Shapes;
 namespace SiTandurWPFApp
 {
     /// <summary>
-    /// Interaction logic for AdminMenghapusPetani.xaml
+    /// Interaction logic for AdminMenghapusTanaman.xaml
     /// </summary>
-    public partial class AdminMenghapusPetani : Window
+    public partial class AdminMenghapusTanaman : Window
     {
         public DataTable dtDataPetani;
         public static NpgsqlCommand cmd;
         private string sql = null;
         private NpgsqlConnection conn;
-        public int idPetani;
+        public int idTanaman;
 
-        public AdminMenghapusPetani(int IDPetani)
+        public AdminMenghapusTanaman(int IDTanaman)
         {
             InitializeComponent();
 
             string connstring = "Host=localhost;port=5432;Username=adminsitandur;Password=halo123;Database=sitandur";
             conn = new NpgsqlConnection(connstring);
-            idPetani = IDPetani;
+            idTanaman = IDTanaman;
         }
 
         private void HapusDataBtn_Click(object sender, RoutedEventArgs e)
@@ -42,13 +42,13 @@ namespace SiTandurWPFApp
             {
                 conn.Open();
 
-                string queryDeletePetani = @"SELECT * FROM st_delete_petani(:_petaniID)";
-                cmd = new NpgsqlCommand(queryDeletePetani, conn);
+                string queryDeleteTanaman = @"SELECT * FROM st_delete_tanaman(:_tanamanID)";
+                cmd = new NpgsqlCommand(queryDeleteTanaman, conn);
 
-                cmd.Parameters.AddWithValue("_petaniID", idPetani);
+                cmd.Parameters.AddWithValue("_tanamanID", idTanaman);
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
-                    MessageBox.Show("Data Petani Berhasil Dihapus!");
+                    MessageBox.Show("Data Tanaman Berhasil Dihapus!");
                 }
 
                 conn.Close();
@@ -65,7 +65,7 @@ namespace SiTandurWPFApp
 
         private void TidakBtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+
         }
     }
 }

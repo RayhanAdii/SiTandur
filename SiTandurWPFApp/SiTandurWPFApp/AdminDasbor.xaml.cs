@@ -167,7 +167,11 @@ namespace SiTandurWPFApp
 
         private void BtnTabelHapusTanaman_Click(object sender, RoutedEventArgs e)
         {
+            object IDTanaman = ((Button)sender).CommandParameter;
 
+            AdminMenghapusTanaman adminMenghapusTanaman = new AdminMenghapusTanaman((int)IDTanaman);
+            this.Close();
+            adminMenghapusTanaman.Show();
         }
     }
     
