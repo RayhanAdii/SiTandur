@@ -58,7 +58,7 @@
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                                    <Button x:Name="BtnTabelUbahPetani" Content="Ubah" Width="55" Height="23" Margin="0 0 10 0" Foreground="White"  Background="#FF52A155" BorderBrush="#FF52A155" Click="BtnTableUbahPetani_Click">
+                                    <Button x:Name="BtnTabelUbahPetani" Content="Ubah" Width="55" Height="23" Margin="0 0 10 0" Foreground="White"  Background="#FF52A155" BorderBrush="#FF52A155" Click="BtnTableUbahPetani_Click" CommandParameter="{Binding Path=IDPetani}">
                                         <Button.Template>
                                             <ControlTemplate TargetType="Button">
                                                 <Border Background="#FF52A155" BorderBrush="#FF52A155" BorderThickness="0" CornerRadius="8">

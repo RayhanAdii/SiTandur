@@ -19,7 +19,7 @@ namespace SiTandurWPFApp
     /// </summary>
     public partial class AdminMengeditPetaniWindow : Window
     {
-        public AdminMengeditPetaniWindow()
+        public AdminMengeditPetaniWindow(int IDPetani)
         {
             InitializeComponent();
         }

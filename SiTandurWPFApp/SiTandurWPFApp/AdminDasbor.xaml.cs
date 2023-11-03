@@ -15,6 +15,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace SiTandurWPFApp
 {
@@ -122,8 +123,10 @@ namespace SiTandurWPFApp
 
         private void BtnTableUbahPetani_Click(object sender, RoutedEventArgs e)
         {
-            AdminMengeditPetaniWindow adminEditPetaniWindow = new AdminMengeditPetaniWindow();
-            adminEditPetaniWindow.Show();
+            object IDPetani = ((Button)sender).CommandParameter;
+
+            AdminMengeditPetani adminEditPetani = new AdminMengeditPetani((int)IDPetani);
+            adminEditPetani.Show();
         }
 
         private void petaniDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
