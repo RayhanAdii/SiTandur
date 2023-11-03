@@ -58,7 +58,9 @@ namespace SiTandurWPFApp
                 if (result == 1)
                 {
                     PetaniDashboard dashboard = new PetaniDashboard();
+                    DataHasilPanenPage datahasilpanen = new DataHasilPanenPage();
                     dashboard.Email = txtName.Text;
+                    datahasilpanen.Email = txtName.Text;
                     this.Hide();
                     dashboard.Show();
 

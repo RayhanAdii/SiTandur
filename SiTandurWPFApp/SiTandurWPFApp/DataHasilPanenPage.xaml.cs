@@ -24,14 +24,16 @@ namespace SiTandurWPFApp
         {
 
             PetaniDashboard petaniDashboard = new PetaniDashboard();
+            petaniDashboard.Email = Email;
             this.Close();
             petaniDashboard.Show();
         }
 
+        
         public DataHasilPanenPage()
         {
             InitializeComponent();
-
+            this.DataContext = this;
 
             ObservableCollection<HasilPanen> hasilPanen = new ObservableCollection<HasilPanen>();
 
@@ -94,9 +96,10 @@ namespace SiTandurWPFApp
             hasilPanenDataGrid.ItemsSource = hasilPanen;
         }
 
+        public string Email { get; set; }
+
         private void BtnTabelTambahHasilPanen_Click(object sender, RoutedEventArgs e)
         {
-            // Ini Diganti ke winforms edit petani
             AddHasilPanen addHasilPanen = new AddHasilPanen();
             addHasilPanen.Show();
         }

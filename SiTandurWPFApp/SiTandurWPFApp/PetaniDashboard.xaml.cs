@@ -31,6 +31,7 @@ namespace SiTandurWPFApp
         private void DataHasilPanen_Checked(object sender, RoutedEventArgs e)
         {
             DataHasilPanenPage dataHasilPanen = new DataHasilPanenPage();
+            dataHasilPanen.Email = Email;
             this.Close();
             dataHasilPanen.Show();
         }

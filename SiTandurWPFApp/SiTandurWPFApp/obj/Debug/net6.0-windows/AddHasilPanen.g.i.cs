@@ -117,7 +117,7 @@ namespace SiTandurWPFApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SiTandurWPFApp;V1.0.0.0;component/addhasilpanen.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SiTandurWPFApp;component/addhasilpanen.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AddHasilPanen.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

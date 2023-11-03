@@ -23,5 +23,15 @@ namespace SiTandurWPFApp
         {
             InitializeComponent();
         }
+
+        private void BtnAdminBatalTambahTanaman_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnAdminSimpanTambahTanaman_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
