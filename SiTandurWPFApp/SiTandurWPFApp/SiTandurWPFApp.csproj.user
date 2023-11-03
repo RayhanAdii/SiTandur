@@ -28,6 +28,9 @@
     <Compile Update="DataHasilPanenPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="EditHasilPanen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="PetaniDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -64,6 +67,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="DataHasilPanenPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditHasilPanen.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

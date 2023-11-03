@@ -81,7 +81,7 @@
                         <DataTemplate>
 
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                                <Button x:Name="BtnTabelUbahHasilPanen" Content="Ubah" Width="55" Height="23" Margin="0 0 10 0" Foreground="White"  Background="#FF52A155" BorderBrush="#FF52A155" Click="BtnTabelUbahHasilPanen_Click">
+                                <Button x:Name="BtnTabelUbahHasilPanen" Content="Ubah" Width="55" Height="23" Margin="0 0 10 0" Foreground="White"  Background="#FF52A155" BorderBrush="#FF52A155" Click="BtnTabelUbahHasilPanen_Click" CommandParameter="{Binding Path=IDHasilPanen}">
                                     <Button.Template>
                                         <ControlTemplate TargetType="Button">
                                             <Border Background="#FF52A155" BorderBrush="#FF52A155" BorderThickness="0" CornerRadius="8">

@@ -78,8 +78,10 @@ namespace SiTandurWPFApp
 
         private void BtnTabelUbahHasilPanen_Click(object sender, RoutedEventArgs e)
         {
-            AddHasilPanen addHasilPanen = new AddHasilPanen();
-            addHasilPanen.Show();
+            object IDHasilPanen = ((Button)sender).CommandParameter;
+
+            EditHasilPanen editHasilPanen = new EditHasilPanen((int)IDHasilPanen);
+            editHasilPanen.Show();
         }
 
         private void BtnTabelHapusPetani_Click(object sender, RoutedEventArgs e)
