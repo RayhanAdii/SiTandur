@@ -68,7 +68,7 @@
                                         </Button.Template>
                                     </Button>
 
-                                    <Button x:Name="BtnTabelHapusPetani" Content="Hapus" Width="55" Height="23" Foreground="White" Background="#FFBE5858" BorderBrush="#FF52A155" Click="BtnTabelHapusPetani_Click">
+                                    <Button x:Name="BtnTabelHapusPetani" Content="Hapus" Width="55" Height="23" Foreground="White" Background="#FFBE5858" BorderBrush="#FF52A155" Click="BtnTabelHapusPetani_Click" CommandParameter="{Binding Path=IDPetani}">
                                         <Button.Template>
                                             <ControlTemplate TargetType="Button">
                                                 <Border Background="#FFBE5858" BorderBrush="#FFBE5858" BorderThickness="0" CornerRadius="8">
@@ -109,7 +109,7 @@
                                         </Button.Template>
                                     </Button>
 
-                                    <Button x:Name="BtnTabelHapusPetani" Content="Hapus" Width="55" Height="23" Foreground="White" Background="#FFBE5858" BorderBrush="#FF52A155" Click="BtnTabelHapusPetani_Click">
+                                    <Button x:Name="BtnTabelHapusTanaman" Content="Hapus" Width="55" Height="23" Foreground="White" Background="#FFBE5858" BorderBrush="#FF52A155" Click="BtnTabelHapusTanaman_Click" CommandParameter="{Binding Path=IDTanaman}">
                                         <Button.Template>
                                             <ControlTemplate TargetType="{x:Type Button}">
                                                 <Border Background="#FFBE5858" BorderBrush="#FFBE5858" BorderThickness="0" CornerRadius="8">

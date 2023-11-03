@@ -136,8 +136,11 @@ namespace SiTandurWPFApp
 
         private void BtnTabelHapusPetani_Click(object sender, RoutedEventArgs e)
         {
-            AdminHapusData adminHapusData = new AdminHapusData();
-            adminHapusData.Show();
+            object IDPetani = ((Button)sender).CommandParameter;
+
+            AdminMenghapusPetani adminMenghapusPetani = new AdminMenghapusPetani((int)IDPetani);
+            this.Close();
+            adminMenghapusPetani.Show();
         }
 
         public void Admin_Window_Loaded(object sender, RoutedEventArgs e)
@@ -160,6 +163,11 @@ namespace SiTandurWPFApp
 
             AdminMengeditTanaman adminEditTanaman = new AdminMengeditTanaman((int)IDTanaman);
             adminEditTanaman.Show();
+        }
+
+        private void BtnTabelHapusTanaman_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
     
