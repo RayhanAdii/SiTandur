@@ -134,6 +134,14 @@ namespace SiTandurWPFApp
             }
             return hasilPanenList;
         }
+
+        private void BtnTabelHapusHasilPanen_Click(object sender, RoutedEventArgs e)
+        {
+            object IDHasilPanen = ((Button)sender).CommandParameter;
+
+            DeleteHasilPanen deleteHasilPanen = new DeleteHasilPanen((int)IDHasilPanen);
+            deleteHasilPanen.Show();
+        }
     }
 }
 
