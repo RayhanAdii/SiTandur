@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\App.xaml
-12-1824809193
+14-534032097
 31368073956
-172082861301
+19-489527744
 2311365972402
-AddHasilPanen.xaml;AdminDasbor.xaml;AdminHapusData.xaml;AdminLoginPage.xaml;AdminMenambahPetaniWindow.xaml;AdminMenambahTanamanWindow.xaml;AdminMengeditPetaniWindow.xaml;DataHasilPanenPage.xaml;MainWindow.xaml;PetaniDashboard.xaml;PetaniLoginPage.xaml;WelcomePage.xaml;
+AddHasilPanen.xaml;AdminDasbor.xaml;AdminHapusData.xaml;AdminLoginPage.xaml;AdminMenambahPetaniWindow.xaml;AdminMenambahTanamanWindow.xaml;AdminMengeditPetaniWindow.xaml;AdminMengeditTanamanWindow.xaml;DataHasilPanenPage.xaml;EditHasilPanen.xaml;MainWindow.xaml;PetaniDashboard.xaml;PetaniLoginPage.xaml;WelcomePage.xaml;
 
 True
 

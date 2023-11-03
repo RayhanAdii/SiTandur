@@ -166,3 +166,7 @@ D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp
 D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\WelcomePage.baml
 D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMenambahTanamanWindow.g.cs
 D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMenambahTanamanWindow.baml
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMengeditTanamanWindow.g.cs
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\EditHasilPanen.g.cs
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\AdminMengeditTanamanWindow.baml
+D:\Programs\AAA Junior Project\hasilpanen\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Debug\net6.0-windows\EditHasilPanen.baml
