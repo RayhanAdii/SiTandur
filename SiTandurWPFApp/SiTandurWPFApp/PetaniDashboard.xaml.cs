@@ -23,7 +23,10 @@ namespace SiTandurWPFApp
         public PetaniDashboard()
         {
             InitializeComponent();
+            this.DataContext = this;
         }
+
+        public string Email { get; set; }
 
         private void DataHasilPanen_Checked(object sender, RoutedEventArgs e)
         {

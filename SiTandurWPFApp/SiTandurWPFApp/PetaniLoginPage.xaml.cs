@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,13 +27,55 @@ namespace SiTandurWPFApp
             InitializeComponent();
         }
 
+        private NpgsqlConnection conn;
+        string connstring = "Host=localhost;port=5432;Username=adminsitandur;Password=halo123;Database=sitandur";
+        private DataTable dt;
+        private NpgsqlCommand cmd;
+        private string sql = null;
+
+
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtName.Text) && !string.IsNullOrEmpty(passwordBox.Password))
+            //if (!string.IsNullOrEmpty(txtName.Text) && !string.IsNullOrEmpty(passwordBox.Password))
+            //{
+            //    PetaniDashboard petanidashboard = new PetaniDashboard();
+            //    this.Close();
+            //    petanidashboard.Show();
+            //}
+            try
             {
-                PetaniDashboard petanidashboard = new PetaniDashboard();
-                this.Close();
-                petanidashboard.Show();
+                conn = new NpgsqlConnection(connstring);
+
+                conn.Open();
+                sql = @"select * from userlogin(:_emailpetani,:_passwordpetani)";
+                cmd = new NpgsqlCommand(sql, conn);
+
+                cmd.Parameters.AddWithValue("_emailpetani", txtName.Text);
+                cmd.Parameters.AddWithValue("_passwordpetani", passwordBox.Password);
+
+                int result = (int)cmd.ExecuteScalar();
+
+                conn.Close();
+
+                if (result == 1)
+                {
+                    PetaniDashboard dashboard = new PetaniDashboard();
+                    dashboard.Email = txtName.Text;
+                    this.Hide();
+                    dashboard.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("Mohon cek email atau password", "Login Gagal", MessageBoxButton.OK);
+                    return;
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Something went wrong", MessageBoxButton.OK);
+                conn.Close();
             }
         }
 
