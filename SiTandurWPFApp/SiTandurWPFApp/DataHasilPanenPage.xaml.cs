@@ -84,12 +84,6 @@ namespace SiTandurWPFApp
             editHasilPanen.Show();
         }
 
-        private void BtnTabelHapusPetani_Click(object sender, RoutedEventArgs e)
-        {
-            AddHasilPanen addHasilPanen = new AddHasilPanen();
-            addHasilPanen.Show();
-        }
-
         private void petaniDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
