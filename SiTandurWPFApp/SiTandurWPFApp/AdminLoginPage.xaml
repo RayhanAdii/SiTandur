@@ -32,7 +32,7 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <TextBlock x:Name="textName" MouseDown="textName_MouseDown" Text="Nama" Style="{StaticResource textHint}" />
+                        <TextBlock x:Name="textName" MouseDown="textName_MouseDown" Text="Email" Style="{StaticResource textHint}" />
                         <TextBox x:Name="txtName" TextChanged="txtName_TextChanged" Style="{StaticResource textBox}" />
                     </Grid>
                 </Border>
