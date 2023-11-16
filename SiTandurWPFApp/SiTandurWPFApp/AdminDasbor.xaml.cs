@@ -1,4 +1,5 @@
-﻿using Npgsql;
+﻿using Microsoft.VisualBasic;
+using Npgsql;
 using System;
 using System.CodeDom;
 using System.Collections.Generic;
@@ -64,17 +65,37 @@ namespace SiTandurWPFApp
 
                 tanamanDataGrid.ItemsSource = tanamanList;
 
+                // Show AvgPetani
+                string queryShowAvgPetani = @"select AVG(usiapetani) AS average_age FROM petani";
+                NpgsqlCommand cmdAvg = new NpgsqlCommand(queryShowAvgPetani, conn);
+                var averageAge = cmdAvg.ExecuteScalar();
 
+                // Use 'averageAge' as needed, for example, display it in a label
+                if (averageAge != DBNull.Value)
+                {
+                    int avgAge = Convert.ToInt32(averageAge);
+                    // Do something with avgAge, e.g., display it in a label
+                    RerataUsiaPetani.Content = avgAge.ToString();
+                }
+
+                // Show JumlahKelompokTani
+                string queryShowJumlahKelompok = @"SELECT DISTINCT COUNT(kelompoktani) AS jumlahKelompokTani FROM petani";
+                NpgsqlCommand cmdJumlah = new NpgsqlCommand(queryShowJumlahKelompok, conn);
+                var JumlahKelompok = cmdJumlah.ExecuteScalar();
+
+                if (JumlahKelompok != DBNull.Value)
+                {
+                    JumlahKelompokPetani.Content = JumlahKelompok.ToString();
+                }
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error Pak" + ex) ;
+                MessageBox.Show("Error Pak " + ex) ;
             }
 
 
         }
-
 
 
         private List<Petani> ConvertDataTableToListPetani(DataTable dataTable)

@@ -9,8 +9,12 @@
         WindowStartupLocation="CenterScreen"
         Title="Petani Login Page" Height="600" Width="800" Background="#52A155">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="399*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <!---Input Form-->
-        <Border Width="565" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#fff"
+        <Border Width="564" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#fff"
             BorderThickness="2" CornerRadius="10" Padding="30" Background="White">
             <StackPanel>
 

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
-        Title="PetaniDashboard" Height="600" Width="800">
+        Title="PetaniDashboard" Height="600" Width="1128">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -24,8 +24,8 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        <Label x:Name="emailpetani" Foreground="#fff" Content="{Binding Email}" FontSize="12" HorizontalAlignment="Left" Margin="92,34,0,0" VerticalAlignment="Top" Width="126"/>
-        <Button Content="Info Profil" HorizontalAlignment="Left" Margin="92,59,0,0" VerticalAlignment="Top" Width="66"/>
+        <Label Foreground="#fff" Content="Masuk Sebagai:" FontSize="12" HorizontalAlignment="Left" Margin="90,32,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label x:Name="emailpetani" Foreground="#fff" Content="{Binding Email}" FontSize="12" HorizontalAlignment="Left" Margin="90,55,0,0" VerticalAlignment="Top" Width="126"/>
 
         <StackPanel>
 
@@ -35,11 +35,6 @@
                          FontSize="16"
                          Margin="0,150,0,0"
                          Style="{StaticResource MenuSelectedButton}"/>
-            <RadioButton Content="    Data Hasil Panen"
-                         Height="50"
-                         Foreground="White"
-                         FontSize="16"
-                         Style="{StaticResource MenuButton}" Checked="DataHasilPanen_Checked" />
             <RadioButton x:Name="radioBtnLogOut" Content="    Log Out"
                 Height="50"
                 Foreground="White"
@@ -50,66 +45,84 @@
         <Image Source="\Images\novice.png" HorizontalAlignment="Left" Height="48" Margin="30,34,0,0" VerticalAlignment="Top" Width="48"/>
 
 
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="38,69,311,376" CornerRadius="8
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="41,89,498,322" CornerRadius="8
             " Background="#FFECECEC" Grid.Column="1">
             <Border.Effect>
                 <DropShadowEffect Color="#bdbdbd" Opacity="0.5" BlurRadius="5" ShadowDepth="3"/>
             </Border.Effect>
             <Grid Margin="7 9">
                 <lvc:CartesianChart>
+                    <lvc:CartesianChart.Series>
+                        <lvc:LineSeries Title="Tag1" Values="140" Name="SerLine1"/>
+                        <lvc:LineSeries Title="Tag2" Values="100" Name="SerLine2"/>
+                    </lvc:CartesianChart.Series>
                 </lvc:CartesianChart>
 
             </Grid>
         </Border>
+        <DataGrid HeadersVisibility="Column" AutoGenerateColumns="False"  CanUserAddRows = "False" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeader1}"  RowStyle="{DynamicResource DataGridRowStyle1}" x:Name="hasilPanenDataGrid" GridLinesVisibility="None" Margin="41,357,29,58" SelectionChanged="petaniDataGrid_SelectionChanged" Grid.Column="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID Panen" Binding ="{Binding IDHasilPanen}" IsReadOnly="True" CanUserResize="False" Width="60"/>
+                <DataGridTextColumn Header="Tanggal" Binding ="{Binding TanggalPanen}" IsReadOnly="True" Width="70"/>
+                <!--<DataGridTextColumn Header="ID Panen" Binding ="{Binding IDPanen}" IsReadOnly="True" Width="60"/>-->
+                <DataGridTextColumn Header="Nama Tanaman" Binding ="{Binding NamaTanaman}" IsReadOnly="True"  Width="100"/>
+                <DataGridTextColumn Header="Lokasi" Binding ="{Binding LokasiPanen}" IsReadOnly="True"  Width="130"/>
+                <!--<DataGridTextColumn Header="Nama Petani" Binding ="{Binding NamaPetani}" IsReadOnly="True" Width="100"/>-->
+                <DataGridTextColumn Header="Berat (kg)" Binding ="{Binding BeratHasilPanen}" IsReadOnly="True"  Width="100"/>
+                <DataGridTextColumn Header="Harga Pasar (Rp)" Binding ="{Binding HargaPasar}" IsReadOnly="True"  Width="100"/>
+                <DataGridTextColumn Header="Harga Jual (Rp)" Binding ="{Binding HargaJual}" IsReadOnly="True"  Width="100"/>
 
+                <DataGridTemplateColumn Header="Aksi"  Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
 
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="283,69,184,376" CornerRadius="8
-            " Background="#FFECECEC" Grid.Column="1">
-            <Border.Effect>
-                <DropShadowEffect Color="#bdbdbd" Opacity="0.5" BlurRadius="5" ShadowDepth="3"/>
-            </Border.Effect>
-            <Grid Margin="7 9">
-                <TextBox x:Name="TitleBeratPanen" Text="Total Berat Panen" FontSize="9" HorizontalAlignment="Center" Style="{StaticResource textBox}" Margin="0,0,0,83" Background="#FFECECEC" Foreground="#52A155"/>
-                <TextBox x:Name="TotalPanen" Text="750" FontSize="35" HorizontalAlignment="Center" Style="{StaticResource textBox}" Margin="0,25,0,0" Background="#FFECECEC" Foreground="#52A155" FontWeight="Bold" />
-                <TextBox x:Name="Units" Text="kilogram" FontSize="15" HorizontalAlignment="Center" Style="{StaticResource textBox}" Margin="0,67,0,0" Background="#FFECECEC" Foreground="#52A155"/>
-            </Grid>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <Button x:Name="BtnTabelUbahHasilPanen" Content="Ubah" Width="55" Height="23" Margin="0 0 10 0" Foreground="White"  Background="#FF52A155" BorderBrush="#FF52A155" Click="BtnTabelUbahHasilPanen_Click" CommandParameter="{Binding IDHasilPanen}">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Background="#FF52A155" BorderBrush="#FF52A155" BorderThickness="0" CornerRadius="8">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+
+                                <Button x:Name="BtnTabelHapusHasilPanen" Content="Hapus" Width="55" Height="23" Foreground="White" Background="#FFBE5858" BorderBrush="#FF52A155" Click="BtnTabelHapusHasilPanen_Click" CommandParameter="{Binding IDHasilPanen}">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Background="#FFBE5858" BorderBrush="#FFBE5858" BorderThickness="0" CornerRadius="8">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+                            </StackPanel>
+
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock Text="Data Hasil Panen" FontSize="18" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,297,0,0" Grid.Column="1"/>
+        <Border Background="Transparent" CornerRadius="8" BorderBrush="#52A155" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="43,321,0,0" Grid.Column="1">
+            <Button x:Name="btnTambahHasilPanen" Content="+ Tambah" FontSize="12" Background="Transparent" Foreground="#52A155" Padding="14,6,14,7" BorderThickness="0" Click="btnTambahHasilPanen_Click"/>
         </Border>
-
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="401,69,66,376" CornerRadius="8
-            " Background="#FFECECEC" Grid.Column="1">
+        <TextBlock Text="Grafik Hasil Panen" FontSize="18" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,44,0,0" Grid.Column="1" Width="169"/>
+        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="502,89,47,322" CornerRadius="8             " Background="#FFECECEC" Grid.Column="1">
             <Border.Effect>
                 <DropShadowEffect Color="#bdbdbd" Opacity="0.5" BlurRadius="5" ShadowDepth="3"/>
             </Border.Effect>
             <Grid Margin="7 9">
-                <TextBox x:Name="C" Style="{StaticResource textBox}" Margin="5,0,5,0" Background="#FFECECEC" />
-                <TextBox x:Name="TitlePendapatan" Text="Pendapatan Kotor" FontSize="9" HorizontalAlignment="Center" Style="{StaticResource textBox}" Margin="0,0,0,83" Background="#FFECECEC" Foreground="#4884DF"/>
-                <TextBox x:Name="Pendapatan" Text="150" FontSize="35" HorizontalAlignment="Center" Style="{StaticResource textBox}" Margin="0,25,0,0" Background="#FFECECEC" Foreground="#4884DF" FontWeight="Bold" />
-                <TextBox x:Name="Besaran" Text="juta" FontSize="15" HorizontalAlignment="Center" Style="{StaticResource textBox}" Margin="0,67,0,0" Background="#FFECECEC" Foreground="#4884DF"/>
-            </Grid>
-        </Border>
-
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="283,252,66,193" CornerRadius="8
-            " Background="#FFECECEC" Grid.Column="1">
-            <Border.Effect>
-                <DropShadowEffect Color="#bdbdbd" Opacity="0.5" BlurRadius="5" ShadowDepth="3"/>
-            </Border.Effect>
-            <Grid Margin="7 9">
-                <lvc:CartesianChart Series="{Binding SeriesCollection}">
+                <lvc:CartesianChart>
+                    <lvc:CartesianChart.Series>
+                        <lvc:LineSeries Title="Tag1" Values="140" x:Name="SerLine3"/>
+                        <lvc:LineSeries Title="Tag2" Values="100" x:Name="SerLine4"/>
+                    </lvc:CartesianChart.Series>
                 </lvc:CartesianChart>
 
             </Grid>
         </Border>
-
-        <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="38,252,311,193" CornerRadius="8
-            " Background="#FFECECEC" Grid.Column="1">
-            <Border.Effect>
-                <DropShadowEffect Color="#bdbdbd" Opacity="0.5" BlurRadius="5" ShadowDepth="3"/>
-            </Border.Effect>
-            <Grid Margin="7 9">
-                <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="Left">
-                </lvc:CartesianChart>
-            </Grid>
-        </Border>
+        <TextBlock Text="Informasi Cuaca" FontSize="18" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="505,44,0,0" Grid.Column="1" Width="169"/>
 
 
 

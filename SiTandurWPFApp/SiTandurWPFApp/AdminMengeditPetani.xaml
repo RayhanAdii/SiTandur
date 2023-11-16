@@ -12,7 +12,7 @@
             <ColumnDefinition Width="442*"/>
             <ColumnDefinition Width="37*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock HorizontalAlignment="Left" Margin="62,14,0,0" TextWrapping="Wrap" Text="Tambah Data" VerticalAlignment="Top" FontSize="16" FontFamily="./Inter-Regular.ttf"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,14,0,0" TextWrapping="Wrap" Text="Edit Data" VerticalAlignment="Top" FontSize="16" FontFamily="./Inter-Regular.ttf"/>
         <Border BorderBrush="#ACB0AF" BorderThickness="0" Margin="62,134,25,395" CornerRadius="8
                 " Width="355" Background="#FFECECEC" Height="39">
             <Grid Margin="7 9">

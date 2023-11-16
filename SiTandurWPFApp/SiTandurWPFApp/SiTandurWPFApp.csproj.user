@@ -33,7 +33,7 @@
     <Compile Update="AdminMenghapusTanaman.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="DataHasilPanenPage.xaml.cs">
+    <Compile Update="ConfirmLogOut.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="DeleteHasilPanen.xaml.cs">
@@ -83,7 +83,7 @@
     <Page Update="AdminMenghapusTanaman.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="DataHasilPanenPage.xaml">
+    <Page Update="ConfirmLogOut.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="DeleteHasilPanen.xaml">

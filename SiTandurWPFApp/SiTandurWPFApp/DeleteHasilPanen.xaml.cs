@@ -53,8 +53,8 @@ namespace SiTandurWPFApp
 
                 conn.Close();
 
-                DataHasilPanenPage dataHasilPanenPage = new DataHasilPanenPage();
-                dataHasilPanenPage.Show();
+                PetaniDashboard petaniDashboard = new PetaniDashboard();
+                petaniDashboard.Show();
 
                 this.Close();
             }
