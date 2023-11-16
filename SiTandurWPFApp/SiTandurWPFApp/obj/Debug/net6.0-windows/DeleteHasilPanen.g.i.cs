@@ -69,7 +69,7 @@ namespace SiTandurWPFApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SiTandurWPFApp;component/deletehasilpanen.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SiTandurWPFApp;V1.0.0.0;component/deletehasilpanen.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\DeleteHasilPanen.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
