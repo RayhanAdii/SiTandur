@@ -32,7 +32,7 @@ namespace SiTandurWPFApp
         {
             InitializeComponent();
 
-            string connstring = "Host=localhost;port=5432;Username=adminsitandur;Password=halo123;Database=sitandur";
+            string connstring = "Host=34.121.118.139;port=5432;Username=adminsitandur;Password=halo123;Database=sitandur";
             conn = new NpgsqlConnection(connstring);
             idTanaman = IDTanaman;
         }

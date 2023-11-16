@@ -41,7 +41,7 @@ namespace SiTandurWPFApp
         }
 
         private NpgsqlConnection conn;
-        string connstring = "Host=localhost;port=5432;Username=adminsitandur;Password=halo123;Database=sitandur";
+        string connstring = "Host=34.121.118.139;port=5432;Username=adminsitandur;Password=halo123;Database=sitandur";
         private DataTable dt;
         private NpgsqlCommand cmd;
         private string sql = null;
