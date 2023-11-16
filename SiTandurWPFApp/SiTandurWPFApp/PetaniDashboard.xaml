@@ -110,8 +110,22 @@
             </Grid>
         </Border>
 
-
-
+        <Label Grid.Column="1" Content="Informasi Cuaca" FontSize="14" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="38,416,0,0" VerticalAlignment="Top"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" x:Name="TbCity" FontSize="12" Margin="79,450,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Grid.Column="1" Content="Kota: " FontSize="12" HorizontalAlignment="Left" Margin="38,445,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSearch" Grid.Column="1" Content="Cari" FontSize="12" HorizontalAlignment="Left" Margin="214,450,0,0" VerticalAlignment="Top" Width="53" Click="btnSearch_Click"/>
+        <Label Grid.Column="1" Content="Conditions: " FontSize="12" HorizontalAlignment="Left" Margin="38,489,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Detail: " FontSize="12" HorizontalAlignment="Left" Margin="38,520,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Sunrise: " FontSize="12" HorizontalAlignment="Left" Margin="210,489,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Sunset: " FontSize="12" HorizontalAlignment="Left" Margin="210,520,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Wind Speed: " FontSize="12" HorizontalAlignment="Left" Margin="371,489,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Humidity: " FontSize="12" HorizontalAlignment="Left" Margin="371,520,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="lblSunrise" Grid.Column="1" HorizontalAlignment="Left" Margin="263,493,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Width="79"/>
+        <TextBox x:Name="lblSunset" Grid.Column="1" HorizontalAlignment="Left" Margin="263,524,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Width="79"/>
+        <TextBox x:Name="lblWindSpeed" Grid.Column="1" HorizontalAlignment="Left" Margin="451,493,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Width="71"/>
+        <TextBox x:Name="lblHumidity" Grid.Column="1" HorizontalAlignment="Left" Margin="451,524,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Width="71"/>
+        <TextBox x:Name="lblConditions" Grid.Column="1" HorizontalAlignment="Left" Margin="108,493,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Width="91"/>
+        <TextBox x:Name="lblDetail" Grid.Column="1" HorizontalAlignment="Left" Margin="108,524,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Width="91"/>
 
 
     </Grid>

@@ -32,6 +32,7 @@ namespace SiTandurWPFApp
         private DataTable dt;
         private NpgsqlCommand cmd;
         private string sql = null;
+        public string? emailPetani = null;
 
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -59,6 +60,7 @@ namespace SiTandurWPFApp
 
                 if (result == 1)
                 {
+
                     PetaniDashboard dashboard = new PetaniDashboard();
                     dashboard.Email = txtName.Text;
                     this.Hide();

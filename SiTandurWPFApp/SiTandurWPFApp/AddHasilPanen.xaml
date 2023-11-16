@@ -21,8 +21,8 @@
                     <ColumnDefinition Width="34*"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBox x:Name="UserAddDate" Style="{StaticResource textBox}" Grid.ColumnSpan="3" Margin="10,0,0,0" Background="#FFECECEC" />
-
+                <TextBox x:Name="UserAddDate" Style="{StaticResource textBox}" Grid.ColumnSpan="3" Margin="10,0,0,0" Background="#FFECECEC" Text="MM/DD/YYYY" />
+                <!--<DatePicker x:Name="UserAddDate" Style="{StaticResource textBox}" Grid.ColumnSpan="3" Margin="10,0,0,0" Background="#FFECECEC" />-->
             </Grid>
         </Border>
         <TextBlock HorizontalAlignment="Left" Margin="62,45,0,0" TextWrapping="Wrap" Text="Tanggal Panen" VerticalAlignment="Top" FontSize="13" FontFamily="./Inter-Regular.ttf"/>

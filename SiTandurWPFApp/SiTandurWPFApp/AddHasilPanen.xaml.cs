@@ -66,7 +66,7 @@ namespace SiTandurWPFApp
             try
             {
 
-                string queryInsertHasilPanen = @"select * from st_insert_hasilpanen(:_namatanaman, :_namapetani, :_berathasilpanen, :_lokasipanen)";
+                string queryInsertHasilPanen = @"select * from st_insert_hasilpanen(:_namatanaman, :_namapetani, :_berathasilpanen, :_tanggalpanen, :_lokasipanen)";
                 cmd = new NpgsqlCommand(queryInsertHasilPanen, conn);
                 cmd.Parameters.AddWithValue("_namatanaman", UserAddTanaman.Text);
                 cmd.Parameters.AddWithValue("_namapetani", UserAddPetani.Text);
@@ -75,6 +75,13 @@ namespace SiTandurWPFApp
                 {
                     cmd.Parameters.AddWithValue("_berathasilpanen", beratHasilPanen);
                 }
+
+                if (DateTime.TryParse(UserAddDate.Text, out DateTime timestamp))
+                {
+                    // Assuming _timestamp is the parameter for the timestamp value in the SQL query
+                    cmd.Parameters.AddWithValue("_tanggalpanen", timestamp);
+                }
+
                 cmd.Parameters.AddWithValue("_lokasipanen", UserAddLocation.Text);
 
                 if ((int)cmd.ExecuteScalar() == 1)

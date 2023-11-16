@@ -27,6 +27,7 @@ namespace SiTandurWPFApp
         public static NpgsqlCommand cmd;
         private string sql = null;
         private NpgsqlConnection conn;
+        public string emailPetani;
 
         private void DasborBtn_Checked(object sender, RoutedEventArgs e)
         {
@@ -40,6 +41,7 @@ namespace SiTandurWPFApp
         {
             InitializeComponent();
 
+            string emailPetaniLogged = this.emailPetani;
             string connstring = "Host=34.121.118.139;port=5432;Username=adminsitandur;Password=halo123;Database=sitandur";
             conn = new NpgsqlConnection(connstring);
 
@@ -50,9 +52,12 @@ namespace SiTandurWPFApp
 
                 //Show Hasil Panen
                 DataTable dataTableShowHasilPanen = new DataTable();
-                string queryShowHasilPanen = @"select hasilpanenid, tanaman.namatanaman,lokasipanen, petani.namapetani, berathasilpanen, DATE(tanggalpanen) AS tanggalonlypanen, tanaman.hargapasar,  (berathasilpanen * tanaman.hargapasar) AS hargajual from hasilpanen 
-                                                                         JOIN tanaman ON hasilpanen.tanamanid = tanaman.tanamanid
-                                                                         JOIN petani ON hasilpanen.petaniid = petani.petaniid";
+                string queryShowHasilPanen = @$"SELECT hasilpanenid, tanaman.namatanaman, lokasipanen, petani.namapetani, berathasilpanen, DATE(tanggalpanen) AS tanggalonlypanen, tanaman.hargapasar, (berathasilpanen * tanaman.hargapasar) AS hargajual 
+                                FROM hasilpanen 
+                                JOIN tanaman ON hasilpanen.tanamanid = tanaman.tanamanid
+                                JOIN petani ON hasilpanen.petaniid = petani.petaniid
+                                ";
+                                //WHERE petani.emailpetani = '{emailPetaniLogged}'"
                 NpgsqlCommand cmdHasilPanen = new NpgsqlCommand(queryShowHasilPanen, conn);
                 var readerHasilPanen = cmdHasilPanen.ExecuteReader();
                 dataTableShowHasilPanen.Load(readerHasilPanen);
