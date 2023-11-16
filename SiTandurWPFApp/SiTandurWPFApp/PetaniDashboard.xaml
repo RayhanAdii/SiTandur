@@ -25,7 +25,6 @@
             </Border.Background>
         </Border>
         <Label x:Name="emailpetani" Foreground="#fff" Content="{Binding Email}" FontSize="12" HorizontalAlignment="Left" Margin="92,34,0,0" VerticalAlignment="Top" Width="126"/>
-        <Button Content="Info Profil" HorizontalAlignment="Left" Margin="92,59,0,0" VerticalAlignment="Top" Width="66"/>
 
         <StackPanel>
 
