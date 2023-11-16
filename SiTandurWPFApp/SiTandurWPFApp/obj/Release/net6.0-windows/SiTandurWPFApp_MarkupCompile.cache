@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Release\net6.0-windows\
+D:\Kuliah\SEMESTER 5\Junpro\3\SiTandur\SiTandurWPFApp\SiTandurWPFApp\obj\Release\net6.0-windows\
 SiTandurWPFApp
 none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
-D:\Kuliah\5th_semester\IT Junior Project\SiTandur\SiTandurWPFApp\SiTandurWPFApp\App.xaml
+D:\Kuliah\SEMESTER 5\Junpro\3\SiTandur\SiTandurWPFApp\SiTandurWPFApp\App.xaml
 18-2074943523
 31368073956
-211895852423
-2311365972402
+22121573958
+232-916802884
 AddHasilPanen.xaml;AdminDasbor.xaml;AdminHapusData.xaml;AdminLoginPage.xaml;AdminMenambahPetani.xaml;AdminMenambahTanamanWindow.xaml;AdminMengeditPetani.xaml;AdminMengeditPetaniWindow.xaml;AdminMengeditTanaman.xaml;AdminMenghapusPetani.xaml;AdminMenghapusTanaman.xaml;DataHasilPanenPage.xaml;DeleteHasilPanen.xaml;EditHasilPanen.xaml;MainWindow.xaml;PetaniDashboard.xaml;PetaniLoginPage.xaml;WelcomePage.xaml;
 
-False
+True
 
