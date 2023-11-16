@@ -67,6 +67,8 @@ namespace SiTandurWPFApp
 
         private void BtnAdminBatalTambahTanaman_Click(object sender, RoutedEventArgs e)
         {
+            AdminDasbor adminDasbor = new AdminDasbor();
+            adminDasbor.Show();
             this.Close();
         }
     }

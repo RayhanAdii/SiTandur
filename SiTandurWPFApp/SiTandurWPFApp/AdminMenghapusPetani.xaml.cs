@@ -65,6 +65,8 @@ namespace SiTandurWPFApp
 
         private void TidakBtn_Click(object sender, RoutedEventArgs e)
         {
+            AdminDasbor adminDasbor = new AdminDasbor();
+            adminDasbor.Show();
             this.Close();
         }
     }

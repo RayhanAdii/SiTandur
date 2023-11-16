@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SiTandurWPFApp"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="AdminMengubahPetani" Height="568" Width="479">
     <Grid Width="479" Height="568">
         <Grid.ColumnDefinitions>

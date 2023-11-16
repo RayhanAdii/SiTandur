@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Background="#FCFCFC"
         ResizeMode="CanResizeWithGrip"
+        WindowStartupLocation="CenterScreen"
         Title="AdminDasbor" Height="900" Width="800" Loaded="Admin_Window_Loaded">
     <ScrollViewer  VerticalScrollBarVisibility="Auto">
         <Grid Height="884.04">

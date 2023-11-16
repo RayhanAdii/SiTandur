@@ -79,6 +79,8 @@ namespace SiTandurWPFApp
 
         private void BtnAdminBatalTambahPetani_Click(object sender, RoutedEventArgs e)
         {
+            AdminDasbor adminDasbor = new AdminDasbor();
+            adminDasbor.Show();
             this.Close();
         }
     }
