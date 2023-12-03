@@ -8,8 +8,9 @@
 <br> **Tipe Aplikasi**: Desktop App menggunakan Windows Presentation Foundation (WPF) C#
 
 ## Fitur Aplikasi:
-⛅ Menampilkan cuaca dan suhu dari API sesuai lokasi untuk membantu meninjau performa panen.
+⛅ Menampilkan cuaca dan kelembapan udara dari API sesuai lokasi untuk membantu meninjau performa panen.
 <br> 📝 Mencatat dan menyimpan data hasil panen.
+<br> 💰 Memantau hasil penjualan ideal dengan mengolah data harga pasar yang diinput admin dan berat hasil panen (dalam kg).
 
 ## Cara Instalasi Aplikasi
 1. Unduh file .zip melalui tombol berikut
