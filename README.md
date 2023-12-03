@@ -15,7 +15,7 @@
 
 ## Cara Instalasi Aplikasi
 1. Unduh file .zip melalui tombol berikut
-<br> [![Button Shield]](https://drive.google.com/uc?id=12vqM45QzwbgpohgJCHGZibC3hysLPGRc)
+<br> [![Button Shield]](https://drive.google.com/uc?id=1mXIN9QhjnB9Y0kHlRy-cqigyjZovm3Df)
 
 [Button Shield]: https://img.shields.io/badge/Unduh_Aplikasi-37a779?style=for-the-badge
 
