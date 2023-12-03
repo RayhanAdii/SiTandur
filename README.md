@@ -26,7 +26,7 @@ Aplikasi   desktop   SiTandur   yang   berfungsi   sebagai   platform pencatatan
 ![ClassDiagram_SiTandur](https://github.com/RayhanAdii/SiTandur/assets/93387102/65e27bb3-c4a9-4912-b7a3-3ffe87b8d0e1)
 
 ## ERD:
-![ERD_Sitandur](https://github.com/RayhanAdii/SiTandur/assets/88720363/009a7880-98e8-47ec-adfe-881ff5ccff7d)
+![image](https://github.com/RayhanAdii/SiTandur/assets/88720363/4914eeaa-9ad1-4e9f-ae29-31c69d22edbb)
 
 ## Activity Diagram:
 ![ActivityDiagram_SiTandur](https://github.com/RayhanAdii/SiTandur/assets/91187378/d7ec5c1e-522d-481b-a69f-5afde955e065)
