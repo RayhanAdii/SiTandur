@@ -28,7 +28,8 @@ Minimnya sistem terintegrasi untuk pencatatan hasil panen pertanian di Indonesia
 
 #### Solusi yang diusulkan beserta fitur aplikasi 
 Aplikasi desktop SiTandur berfungsi sebagai platform pencatatan hasil panen petani secara rutin sehingga data yang padu dapat terhimpun dengan baik. Aplikasi tersebut juga diharapkan dapat membantu meningkatkan produktivitas sektor agrikultur di Indonesia. 
-<br> Aplikasi sejenis yang mirip dengan solusi yang diusulkan adalah [Agriwebb](https://www.agriwebb.com/), yakni merupakan aplikasi _Livestock Management_ yang telah beredar secara komersial di pasaran. Jika dibandingkan dengan aplikasi Agriwebb, aplikasi SiTandur lebih fokus kepada pertanian dan terdapat fitur rekomendasi sederhana berdasarkan cuaca dan musim.
+
+Aplikasi sejenis yang mirip dengan solusi yang diusulkan adalah [Agriwebb](https://www.agriwebb.com/), yakni merupakan aplikasi _Livestock Management_ yang telah beredar secara komersial di pasaran. Jika dibandingkan dengan aplikasi Agriwebb, aplikasi SiTandur lebih fokus kepada pertanian dan terdapat fitur rekomendasi sederhana berdasarkan cuaca dan musim.
 
 #### Rancangan Aplikasi
 | Class Diagram | Entity Relationship Diagram | Activity Diagram |
