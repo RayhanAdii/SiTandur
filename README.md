@@ -10,6 +10,7 @@
 ## Fitur Aplikasi:
 ⛅ Menampilkan cuaca dan kelembapan udara dari API sesuai lokasi untuk membantu meninjau performa panen.
 <br> 📝 Mencatat dan menyimpan data hasil panen.
+<br> 🌱 Mengelola data tanaman panen dan data petani pada dasbor admin.
 <br> 💰 Memantau hasil penjualan ideal dengan mengolah data harga pasar yang diinput admin dan berat hasil panen (dalam kg).
 
 ## Cara Instalasi Aplikasi
@@ -25,12 +26,12 @@
 ## Langkah Penggunaan Aplikasi
 Dalam pembuatan aplikasi tersebut kami menerapkan skema bahwa pengguna merupakan klien spesifik dari suatu kelompok tani pusat di daerah tertentu sehingga mula-mula pengguna diberi akses untuk masuk ke halaman admin:
 1. Masuk sebagai Admin dengan akun email: admin[at]gmail.com dan password: admin    (ubah [at] menjadi @)
-2. Masuk ke bagian dashboard untuk memasukkan data petani dan jenis tanaman.
+2. Masuk ke bagian dasbor untuk memasukkan data petani dan jenis tanaman.
 <br><br>
 
 Setelah role admin selesai menjalankan keperluan, pengguna dapat menutup aplikasi atau beralih menuju role Petani dengan klik tombol `Logout` pada jendela aplikasi. Kemudian, pengguna masuk menuju halaman Petani:
 1. Masuk sebagai Petani dengan akun email: dffz[at]gmail.com dan password: daffaganteng    (ubah [at] menjadi @)
-2. Masuk ke bagian dashboard petani dan dapat melakukan aktivitas seperti mencari data cuaca real time di form pojok kanan dan menambah data hasil panen di tabel bawah. Pengguna (dalam hal ini kami asumsikan sebagai pihak pengelola administratif kelompok tani) dapat melihat total hasil pendapatan dari hasil panen yang ideal serta dapat melakukan proses tambah, ubah, atau hapus hasil panen.
+2. Masuk ke bagian dasbor petani dan dapat melakukan aktivitas seperti mencari data cuaca real time di form pojok kanan dan menambah data hasil panen di tabel bawah. Pengguna (dalam hal ini kami asumsikan sebagai pihak pengelola administratif kelompok tani) dapat melihat total hasil pendapatan dari hasil panen yang ideal serta dapat melakukan proses tambah, ubah, atau hapus hasil panen.
 3. Pengguna dapat logout atau keluar dari aplikasi.
 <br>  
 
