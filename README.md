@@ -33,14 +33,14 @@ Aplikasi sejenis yang mirip dengan solusi yang diusulkan adalah [Agriwebb](https
 
 #### Rancangan Aplikasi
 | Class Diagram | Entity Relationship Diagram | Activity Diagram |
-| ------------- |:-------------:| ----- |
+| ------------- | ------------- | ----- |
 | ![ClassDiagram_SiTandur](https://github.com/RayhanAdii/SiTandur/assets/93387102/65e27bb3-c4a9-4912-b7a3-3ffe87b8d0e1) | ![WhatsApp Image 2023-12-03 at 17 26 24](https://github.com/RayhanAdii/SiTandur/assets/91187378/2242cb3c-d537-460e-9a75-f80596f92f68) | ![JUNPRO_SITANDUR-SiTandur_Activity](https://github.com/RayhanAdii/SiTandur/assets/91187378/881d73ca-e7bb-4b00-a25b-1730eab89995) |
 
 <br>
 
 ## Tentang Kami
 |🌱🌱🌱| Tim Klepon Junior Project |🌱🌱🌱🌱🌱🌱🌱|
-| ------------- |:-------------:| -----:|
+| ------------- | ------------- | ----- |
 | Ketua     | Laily Medha Nur Ihsanti | 21/474650/TK/52363 |
 | Anggota 1     | Rayhan Adi Wicaksono      |   21/477186/TK/52550 |
 | Anggota 2 | Daffa Kamal      |    21/477293/TK/52564 |
