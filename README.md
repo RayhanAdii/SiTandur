@@ -20,7 +20,7 @@
 [Button Shield]: https://img.shields.io/badge/Unduh_Aplikasi-37a779?style=for-the-badge
 
 2. Ekstrak file .zip yang telah diunduh
-3. Install dan jalankan aplikasi `SiTandur.exe`
+3. Install dan jalankan aplikasi `setup.exe`
 <br>
 
 ## Langkah Penggunaan Aplikasi
