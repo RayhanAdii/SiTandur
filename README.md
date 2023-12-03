@@ -11,7 +11,7 @@
 ⛅ Menampilkan cuaca dan kelembapan udara dari API sesuai lokasi untuk membantu meninjau performa panen.
 <br> 📝 Mencatat dan menyimpan data hasil panen.
 <br> 🌱 Mengelola data tanaman panen dan data petani pada dasbor admin.
-<br> 💰 Memantau hasil penjualan ideal dengan mengolah data harga pasar yang diinput admin dan berat hasil panen (dalam kg).
+<br> 💰 Memantau hasil penjualan ideal dengan mengolah data harga pasar yang diinput admin dan berat hasil panen.
 
 ## Cara Instalasi Aplikasi
 1. Unduh file .zip melalui tombol berikut
