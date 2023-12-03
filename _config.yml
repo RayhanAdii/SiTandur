@@ -1,4 +1,4 @@
 theme: jekyll-theme-minimal
-logo: assets/img/logoooo.jpg
+logo: /assets/img/logoooo.jpg
 title: SiTandur
 description: SiTandur (Sistem Informasi Tanduran) merupakan aplikasi berbasis desktop yang berguna sebagai platform pencatatan hasil panen. 
